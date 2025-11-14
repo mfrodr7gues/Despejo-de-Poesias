@@ -1,14 +1,43 @@
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+/* SEÇÃO DE ESPOSIÇÃO */
+
+.expo {
     background-color: var(--primary-color-ebony);
     color: var(--secundary-color-tearose);
-    position: sticky;
-    top: 0;
-    padding: 10px 20px;
+    padding: 100px 0;
 }
 
-.logo {
-    height: 40px;
+.info {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
 }
+
+.info h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.info p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.buttons button {
+    background-color: var(--secundary-color-tearose);
+    color: var(--primary-color-ebony);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 6px 16px;
+    margin: 0 3px;
+
+}
+
+/* SEÇÃO DE EM DESTAQUE E POPULARES */

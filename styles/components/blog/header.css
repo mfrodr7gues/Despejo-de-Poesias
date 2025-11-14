@@ -1,0 +1,45 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--primary-color-ebony);
+    color: var(--secundary-color-tearose);
+    position: sticky;
+    top: 0;
+}
+
+.logotitulo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-left: 3rem;
+}
+
+.logo {
+    width: 120px;
+    height: auto;
+}
+
+.titulo {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.navigator ul {
+    display:flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding-right: 5rem;
+}
+
+.navigator ul li {
+    margin-left: 3rem;
+}
+
+.navigator ul li a {
+    text-decoration: none;
+    color: var(--secundary-color-tearose);
+    font-size: 18px;
+    font-weight: 500;
+}
