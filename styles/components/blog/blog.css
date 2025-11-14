@@ -1,0 +1,14 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--primary-color-ebony);
+    color: var(--secundary-color-tearose);
+    position: sticky;
+    top: 0;
+    padding: 10px 20px;
+}
+
+.logo {
+    height: 40px;
+}
