@@ -21,7 +21,7 @@ header {
 }
 
 .titulo {
-    font-size: 36px;
+    font-size: 24px;
     font-weight: 700;
 }
 
@@ -41,5 +41,5 @@ header {
     text-decoration: none;
     color: var(--secundary-color-tearose);
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 400;
 }

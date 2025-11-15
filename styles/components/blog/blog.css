@@ -3,7 +3,17 @@
 .expo {
     background-color: var(--primary-color-ebony);
     color: var(--secundary-color-tearose);
-    padding: 100px 0;
+    padding: 85px 0;
+}
+
+.above {
+    background-color: #6d5656;
+    font-weight: 500;
+    width: 275px;
+    height: 25px;
+    border-radius: 50px;
+    margin: auto;
+    margin-bottom: 10px;
 }
 
 .info {
@@ -29,13 +39,13 @@
 
 .buttons button {
     background-color: var(--secundary-color-tearose);
-    color: var(--primary-color-ebony);
+    color: black;
     border: none;
     border-radius: 8px;
     cursor: pointer;
     font-size: 16px;
     font-weight: 500;
-    padding: 6px 16px;
+    padding: 9px 18px;
     margin: 0 3px;
 
 }

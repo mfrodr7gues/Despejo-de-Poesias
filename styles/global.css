@@ -11,3 +11,7 @@
     --background-color-vanillacream: #F0E7D5;
     --text-color-mochaearth: #4B3935;
 }
+
+body {
+    background-color: var(--background-color-vanillacream);
+}
