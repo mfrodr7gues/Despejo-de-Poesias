@@ -7,7 +7,8 @@
 }
 
 .above {
-    background-color: #6d5656;
+    background-color: var(--secundary-color-tearose);
+    color: var(--primary-color-ebony);
     font-weight: 500;
     width: 275px;
     height: 25px;
@@ -39,7 +40,7 @@
 
 .buttons button {
     background-color: var(--secundary-color-tearose);
-    color: black;
+    color: var(--primary-color-ebony);
     border: none;
     border-radius: 8px;
     cursor: pointer;
