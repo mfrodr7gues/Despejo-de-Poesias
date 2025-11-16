@@ -1,0 +1,11 @@
+Rodar os seguintes comandos no terminal assim que abrir:
+
+(Apenas da primeira vez que abrir)
+npm install json-server
+
+(toda vez que for rodar o site)
+npx json-server --watch ./server/db.json --port=3000
+
+Depois de tudo, crie o aquivo ".gitignore" e dentro dele escreva "node_modules".
+
+apenas isso por hoje.

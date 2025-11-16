@@ -1,0 +1,29 @@
+{
+  "dependencies": {
+    "json-server": "^1.0.0-beta.3"
+  },
+  "name": "despejodepoesias-blog",
+  "version": "1.0.0",
+  "description": "Um simples projeto de blog voltado para a utilização do json-server para aprendizagem.",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mfrodr7gues/DespejoDePoesias.git"
+  },
+  "keywords": [
+    "blog",
+    "poetry",
+    "json",
+    "server"
+  ],
+  "author": "Maria Fernanda, Luiz Otávio, Aline Victor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mfrodr7gues/DespejoDePoesias/issues"
+  },
+  "homepage": "https://github.com/mfrodr7gues/DespejoDePoesias#readme"
+}

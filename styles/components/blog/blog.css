@@ -8,6 +8,9 @@
 
 .above {
     background-color: #6d5656;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-weight: 500;
     width: 275px;
     height: 25px;
@@ -51,3 +54,31 @@
 }
 
 /* SEÇÃO DE EM DESTAQUE E POPULARES */
+
+.contents {
+    padding: 50px;
+    display: flex;
+}
+
+.onHipe {
+    background-color: white;
+    width: 750px;
+    margin-right: 200px;
+}
+
+.onHipe img {
+width: 775px;
+}
+
+.infoBar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.infoBar div {
+    display: flex;
+}
+
+.mostPopulars {
+
+}
