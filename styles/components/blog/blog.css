@@ -42,7 +42,7 @@
 
 .buttons button {
     background-color: var(--secundary-color-tearose);
-    color: black;
+    color: var(--primary-color-ebony);
     border: none;
     border-radius: 8px;
     cursor: pointer;
