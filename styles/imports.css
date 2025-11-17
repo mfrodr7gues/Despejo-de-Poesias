@@ -1,5 +1,5 @@
-@import url('/styles/global.css');
-@import url('/styles/components/admin/admin.css');
-@import url('/styles/components/blog/blog.css');
-@import url('/styles/components/blog/header.css');
-@import url('/styles/components/blog/footer.css');
+@import url('./global.css');
+@import url('components/admin/admin.css');
+@import url('components/blog/blog.css');
+@import url('components/blog/header.css');
+@import url('components/blog/footer.css');
