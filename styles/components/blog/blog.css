@@ -79,6 +79,17 @@ width: 775px;
     display: flex;
 }
 
-.mostPopulars {
+.mostPopulars img {
+    width: 104px;;
+}
+
+.miniArticles {
+    display: flex;
+    border-bottom: solid 2px var(--secundary-color-tearose);
+}
+
+.miniArticles div {
+    margin-left: 20px;
+    
 
 }

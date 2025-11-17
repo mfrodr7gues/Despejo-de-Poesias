@@ -1,0 +1,17 @@
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: var(--primary-color-ebony);
+    padding: 20px;
+    color: var(--secundary-color-tearose);
+}
+
+.primeiraLinha, .segundaLinha {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
