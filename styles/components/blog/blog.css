@@ -37,20 +37,21 @@
 }
 
 .buttons {
+    display: flex;
+    justify-content: center;
     margin-top: 20px;
+    gap: 10px;
 }
 
 .buttons button {
+    display: inline-block;
+    width: auto;
+    padding: 9px 18px;
+    margin: 0;
+    white-space: nowrap;
     background-color: var(--secundary-color-tearose);
     color: var(--primary-color-ebony);
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: 500;
-    padding: 9px 18px;
-    margin: 0 3px;
-
+    font-weight: 600;
 }
 
 /* SEÇÃO DE EM DESTAQUE E POPULARES */

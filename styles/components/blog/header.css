@@ -3,7 +3,7 @@ header {
     align-items: center;
     justify-content: space-between;
     background-color: var(--primary-color-ebony);
-    color: var(--secundary-color-tearose);
+    color: #f5e3c1;
     position: sticky;
     top: 0;
 }
@@ -39,7 +39,7 @@ header {
 
 .navigator ul li a {
     text-decoration: none;
-    color: var(--secundary-color-tearose);
+    color: #f5e3c1;
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 600;
 }

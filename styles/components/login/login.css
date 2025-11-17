@@ -1,4 +1,4 @@
-body {
+.login-page {
     background: var(--primary-color-ebony);
     display: flex;
     align-items: center;

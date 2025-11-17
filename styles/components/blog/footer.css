@@ -1,11 +1,10 @@
-footer{
-    position: fixed;
-    bottom: 0;
+footer {
     width: 100%;
     text-align: center;
     background-color: var(--primary-color-ebony);
     padding: 20px;
     color: var(--secundary-color-tearose);
+    margin-top: 40px;
 }
 
 .primeiraLinha, .segundaLinha {

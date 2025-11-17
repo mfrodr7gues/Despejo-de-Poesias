@@ -1,9 +1,13 @@
-@import url('./global.css');
+/* 1 — Reset e variáveis */
+@import url("./global.css");
 
-@import url('components/admin/admin.css');
+/* 2 — Estruturas base do blog */
+@import url("./components/blog/header.css");
+@import url("./components/blog/footer.css");
 
-@import url('components/blog/blog.css');
-@import url('components/blog/header.css');
-@import url('components/blog/footer.css');
+/* 3 — Estilos da página do blog */
+@import url("./components/blog/blog.css");
 
-@import url('components/login/login.css');
+/* 4 — Admin / Login */
+@import url("./components/admin/admin.css");
+@import url("./components/login/login.css");
