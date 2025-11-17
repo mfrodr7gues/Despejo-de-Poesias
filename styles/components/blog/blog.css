@@ -2,7 +2,7 @@
 
 .expo {
     background-color: var(--primary-color-ebony);
-    color: var(--secundary-color-tearose);
+    color: #f5e3c1;
     padding: 85px 0;
 }
 
@@ -43,13 +43,13 @@
     gap: 10px;
 }
 
-.buttons button {
+.buttons .button-blog {
     display: inline-block;
     width: auto;
     padding: 9px 18px;
     margin: 0;
     white-space: nowrap;
-    background-color: var(--secundary-color-tearose);
+    background-color: #f5e3c1;
     color: var(--primary-color-ebony);
     font-weight: 600;
 }

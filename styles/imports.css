@@ -11,3 +11,5 @@
 /* 4 — Admin / Login */
 @import url("./components/admin/admin.css");
 @import url("./components/login/login.css");
+
+@import url("./components/blog/navigator/contato.css");

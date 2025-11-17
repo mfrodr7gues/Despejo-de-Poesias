@@ -1,0 +1,79 @@
+.caixote {
+    display: flex;
+    align-items: center;
+    padding: 30px 30px;
+    margin: auto;
+    max-width: 400px;
+    height: auto;
+    flex-direction: column;
+    border-radius: 20px;
+    border: solid 2px var(--primary-color-ebony);
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+.titulo-contato {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: var(--primary-color-ebony);
+    margin-bottom: 1rem;
+}
+
+.subtitulo-contato {
+    margin-bottom: 10px;
+    color: var(--primary-color-ebony);
+}
+
+input, textarea {
+    display: inline-block;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 7px;
+    border: solid 2px var(--primary-color-ebony);
+    border-radius: 15px;
+    background-color: var(--background-color-vanillacream);
+}
+
+label {
+    color: var(--primary-color-ebony);
+    font-weight: 600;
+}
+
+form div {
+    display: initial;
+    margin-right: 35px;
+}
+
+input {
+    padding: 10px;
+    max-width: 500px;
+}
+
+input[type="checkbox"] {
+    padding: 0;
+    max-width: 20px;
+}
+
+.button-contato {
+    background-color: var(--primary-color-ebony);
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--background-color-vanillacream);
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all ease 0.5s;
+    white-space: nowrap;
+    width: 100px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 7rem;
+}
+
+.button-contato:hover {
+    background-color: #444a40;
+    transform: scale(1.05);
+    color: var(--background-color-vanillacream);
+}

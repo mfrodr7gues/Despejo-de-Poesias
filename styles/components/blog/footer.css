@@ -3,7 +3,7 @@ footer {
     text-align: center;
     background-color: var(--primary-color-ebony);
     padding: 20px;
-    color: var(--secundary-color-tearose);
+    color: #f5e3c1;
     margin-top: 40px;
 }
 
@@ -13,4 +13,3 @@ footer {
     justify-content: center;
     margin-bottom: 5px;
 }
-
