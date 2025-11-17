@@ -1,0 +1,87 @@
+body {
+    background: var(--primary-color-ebony);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.login-conteiner {
+    background: var( --background-color-vanillacream);
+    padding: 50px 40px;
+    width: 340px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+}
+
+.login-conteiner h1 {
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--primary-color-ebony);
+}
+
+.input-box {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.input-box input {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid var(--primary-color-ebony);
+    background: transparent;
+    outline: none;
+    padding: 14px;
+    font-size: 18px;
+    padding-right: 40px;
+}
+
+.input-box label {
+    position: absolute;
+    top: 12px;
+    left: 0;
+    color: #777;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.input-box input:focus + label,
+.input-box input:valid + label {
+    top: -10px;
+    font-size: 14px;
+    color: var(--primary-color-ebony);
+}
+
+.olhinho {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 18px;
+    color: var(--primary-color-ebony);
+    user-select: none;
+    font-weight: 500;
+}
+
+.olhinho:hover {
+    color: #333;
+}
+
+button {
+    background: var(--primary-color-ebony);
+    color: var( --background-color-vanillacream);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 18px;
+    width: 100%;
+    padding: 10px;
+    transition: 0.5s;
+}
+
+button:hover {
+    background: #444a40;
+}
