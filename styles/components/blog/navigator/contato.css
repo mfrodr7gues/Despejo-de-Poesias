@@ -77,3 +77,34 @@ input[type="checkbox"] {
     transform: scale(1.05);
     color: var(--background-color-vanillacream);
 }
+
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: #fff;
+  border: 2px solid var(--primary-color);
+  width: 22px;
+  height: 22px;
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #02AF75;
+  border: 2px solid #00895c;
+}
+
+input[type="checkbox"]:checked::after {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 0px;
+  width: 6px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
