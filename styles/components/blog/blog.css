@@ -65,13 +65,20 @@
 }
 
 .onHipe {
-    background-color: white;
     width: 750px;
     margin-right: 200px;
 }
 
+.onHipe h2 {
+    margin-bottom: 20px;
+}
+
 .onHipe img {
-width: 775px;
+    width: 775px;
+}
+
+.dateHipe {
+    gap: 6px;
 }
 
 .infoBar {
@@ -79,21 +86,28 @@ width: 775px;
     justify-content: space-between;
 }
 
+.infoBar {
+    padding-top: 10px;
+    padding-bottom: 10px;;
+}
+
 .infoBar div {
     display: flex;
 }
 
 .mostPopulars img {
-    width: 104px;;
+    width: 104px;
+    margin-bottom: 20px;
 }
 
 .miniArticles {
     display: flex;
-    border-bottom: solid 2px var(--secundary-color-tearose);
+    border-bottom: solid 3px var(--secundary-color-tearose);
+    margin-top: 20px;
 }
 
 .miniArticles div {
     margin-left: 20px;
-    
 
 }
+
