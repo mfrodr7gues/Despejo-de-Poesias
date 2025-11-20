@@ -41,9 +41,19 @@ label {
     font-weight: 600;
 }
 
-form div {
-    display: initial;
-    margin-right: 35px;
+.checkboxes {
+    display: grid;
+    grid-template-columns: 112px 112px 112px;
+    margin-bottom: 11px;
+}
+
+.checkboxes div {
+    display: flex;
+    align-items: center;
+}
+
+.checkboxes div label {
+    margin-left: 7px;
 }
 
 .caixote input {
@@ -100,7 +110,7 @@ input[type="checkbox"]:checked {
 input[type="checkbox"]:checked::after {
   content: "";
   position: absolute;
-  left: 6px;
+  left: 4px;
   top: 0px;
   width: 6px;
   height: 12px;
