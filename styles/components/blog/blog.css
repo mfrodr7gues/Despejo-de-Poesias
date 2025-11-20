@@ -57,6 +57,12 @@
     cursor: pointer;
 }
 
+.button-blog:hover {
+    transform: scale(1.1);
+    transition: 500ms;
+    background-color: #edd296;
+}
+
 /* SEÇÃO DE EM DESTAQUE E POPULARES */
 
 .contents {
@@ -78,8 +84,12 @@
     border-radius: 8px;
 }
 
-.dateHipe {
+.dateHipe ,.dateMArticles, .datePoesias {
+    display: flex;
+    font-size: 13px;
+    color: #000000a3;
     gap: 6px;
+    margin-top: 5px;
 }
 
 .infoBar {
@@ -119,17 +129,80 @@
 
 .MACategory {
     margin-bottom: 10px;
+    color: var(--text-color-mochaearth);
+    font-weight: 500;
+    font-size: 14px;
 }
 
 .MATitle {
     color: black;
 }
 
-.dateMArticles {
-    display: flex;
-    font-size: 15px;
-    color: black;
-    gap: 6px;
-    margin-top: 5px;
+/* POESIAS */
+
+.articles {
+    padding: 50px;
 }
 
+.topLine {
+    display: flex;
+    justify-content: space-between;
+}
+
+.searches {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.search {
+    height: 32px;
+    width: 280px;
+    text-indent: 10px;
+    font-family: 'Inter'
+}
+
+.search::placeholder {
+    color: var(#e2e2e2);
+}
+
+.searches div {
+    width: 32px;
+    height: 32px;
+    color: white;
+    background-color: var(--text-color-mochaearth);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.poesias {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 384px 384px 384px;
+    column-gap: 7rem;
+    row-gap: 3rem;
+    padding-top: 30px;
+}
+
+.poesia {
+    max-height: 280px;
+}
+
+.poesia img {
+    max-width: 384px;
+    max-height: 320px;
+    border-radius: 5px;
+}
+
+.PCategory {
+    margin-top: 3px;
+    margin-bottom: 5px;
+    color: var(--text-color-mochaearth);
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.PTitle {
+    color: #0000006e;
+}
