@@ -75,6 +75,7 @@
 
 .onHipe img {
     width: 775px;
+    border-radius: 8px;
 }
 
 .dateHipe {
@@ -95,19 +96,40 @@
     display: flex;
 }
 
+/* MOST POPULARS */
+
 .mostPopulars img {
     width: 104px;
-    margin-bottom: 20px;
+    border-radius: 8px;
+    margin-bottom: 40px;
 }
 
 .miniArticles {
     display: flex;
-    border-bottom: solid 3px var(--secundary-color-tearose);
+    width: 375px;
+    border-bottom: solid 3px var(--text-color-mochaearth);
     margin-top: 20px;
+    color: var(--text-color-mochaearth);
 }
 
-.miniArticles div {
+.MAContent {
     margin-left: 20px;
+    padding: 5px;
+}
 
+.MACategory {
+    margin-bottom: 10px;
+}
+
+.MATitle {
+    color: black;
+}
+
+.dateMArticles {
+    display: flex;
+    font-size: 15px;
+    color: black;
+    gap: 6px;
+    margin-top: 5px;
 }
 
