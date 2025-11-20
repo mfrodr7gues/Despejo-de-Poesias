@@ -13,3 +13,14 @@ footer {
     justify-content: center;
     margin-bottom: 5px;
 }
+
+.seta {
+    padding-left: 1400px;
+}
+
+.seta i {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    font-size: 30px;
+}
