@@ -6,4 +6,14 @@ npm install json-server
 (toda vez que for rodar o site)
 npx json-server --watch ./server/db.json --port=3000
 
+
+Antes de começar a programar(rode no terminal [Ctrl + "]):
+
+1. git checkout main
+2. git fetch origin
+3. git pull
+4. git checkout (seunome)-changes
+5. git merge origin/main
+
+
 apenas isso por hoje.
