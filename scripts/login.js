@@ -6,11 +6,11 @@ const senhaLabel = document.getElementById("Slabel");
 const adms = [
     {
         "email": "luiotv2302@gmail.com",
-        "senha": "Luiz2302"
+        "senha": "alladmin"
     },
     {
         "email": "n.nandcchi@gmail.com",
-        "senha": "nandoca"
+        "senha": "alladmin"
     },
     {
         "email": "alinexyz1811@gmail.com",
@@ -19,13 +19,13 @@ const adms = [
 ]
 
 loginTry.addEventListener("click", e => {
-    e.preventDefault();
+    e.preventDefault()
     const senhaTry =  senha.value;
     const emailTry =  email.value;
 
-    for (let i = 0; i < adms.length; i++){
+    for (let i = 0; i < adms.length; i++) {
         if (emailTry === adms[i].email && senhaTry === adms[i].senha) {
-            open("../admin/admin.html");
+            open ("../admin/admin.html");
         }
         else {
             senha.style.borderBottom = "2px solid #ff6868ff";
@@ -33,7 +33,6 @@ loginTry.addEventListener("click", e => {
         }
     }
 })
-
 
 function mostrarSenha() {
     if (senha.type === "password") {

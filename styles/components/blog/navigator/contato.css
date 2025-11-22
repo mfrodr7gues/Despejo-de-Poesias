@@ -16,13 +16,22 @@
     display: flex;
     justify-content: center;
     text-align: center;
-    color: var(--primary-color-ebony);
     margin-bottom: 1rem;
+    color: var(--primary-color-ebony);
 }
 
 .subtitulo-contato {
-    margin-bottom: 10px;
     color: var(--primary-color-ebony);
+}
+
+#subtitulo-assunto {
+    width: 100%;
+    padding: 7px;
+}
+
+#subtitulo-mensagem {
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
 
 .caixote input, .caixote textarea {
@@ -44,7 +53,7 @@ label {
 .checkboxes {
     display: grid;
     grid-template-columns: 112px 112px 112px;
-    margin-bottom: 11px;
+    margin-bottom: 15px;
 }
 
 .checkboxes div {
@@ -53,7 +62,7 @@ label {
 }
 
 .checkboxes div label {
-    margin-left: 7px;
+    margin-left: 5px;
 }
 
 .caixote input {
@@ -63,7 +72,7 @@ label {
 
 input[type="checkbox"] {
     padding: 0;
-    max-width: 20px;
+    max-width: 15px 15px;
 }
 
 .button-contato {
@@ -93,9 +102,9 @@ input[type="checkbox"] {
   -webkit-appearance: none;
   background-color: #fff;
   border: 2px solid var(--primary-color);
-  width: 22px;
-  height: 22px;
-  border-radius: 4px;
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
   cursor: pointer;
   position: relative;
   margin-top: auto;
