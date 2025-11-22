@@ -6,15 +6,15 @@ const senhaLabel = document.getElementById("Slabel");
 const adms = [
     {
         "email": "luiotv2302@gmail.com",
-        "senha": "alladmin"
+        "senha": "AllAdmin<3"
     },
     {
         "email": "n.nandcchi@gmail.com",
-        "senha": "alladmin"
+        "senha": "AllAdmin<3"
     },
     {
         "email": "alinexyz1811@gmail.com",
-        "senha": "Il0v3m7b0yfri3nd<3"
+        "senha": "AllAdmin<3"
     }
 ]
 
