@@ -1,5 +1,3 @@
-/* Caixa principal */
-
 .caixote {
     display: flex;
     flex-direction: column;
@@ -62,7 +60,6 @@ label {
     margin-left: 5px;
 }
 
-/* Checkbox customizado */
 input[type="checkbox"] {
     appearance: none;
     -webkit-appearance: none;
@@ -92,7 +89,6 @@ input[type="checkbox"]:checked::after {
     transform: rotate(45deg);
 }
 
-/* Botão */
 .button-contato {
     background-color: var(--primary-color-ebony);
     color: var(--background-color-vanillacream);
