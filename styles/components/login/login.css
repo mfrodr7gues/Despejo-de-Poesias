@@ -76,26 +76,30 @@
 }
 
 .button-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: var(--primary-color-ebony);
     color: var(--background-color-vanillacream);
     border: none;
-    border-radius: 15px;
+    border-radius: 20px;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
-    width: 40%;
+    width: 35%;
     padding: 8px;
-    transition: 0.5s;
-    display: flex;
     margin: auto;
-    align-items: center;
-    justify-content: center;
+    transition: 0.3s;
+    transition: transform 0.25s ease;
 }
 
 .button-conteiner {
     padding-top: 1rem;
 }
 
-.button-login:hover {
+.button-login:hover,
+.button-login:focus {
+    transform: scale(1.02);
     background: #444a40;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.60);
 }
