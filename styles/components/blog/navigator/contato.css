@@ -1,20 +1,19 @@
+/* Caixa principal */
+
 .caixote {
     display: flex;
-    align-items: center;
-    padding: 30px 30px;
-    margin: auto;
-    max-width: 400px;
-    height: auto;
     flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    margin: 10vh auto;
+    max-width: 400px;
     border-radius: 20px;
-    border: solid 2px var(--primary-color-ebony);
-    margin-top: 10vh;
-    margin-bottom: 10vh;
+    border: 2px solid var(--primary-color-ebony);
+    background-color: var(--background-color-vanillacream);
 }
 
+/* Títulos */
 .titulo-contato {
-    display: flex;
-    justify-content: center;
     text-align: center;
     margin-bottom: 1rem;
     color: var(--primary-color-ebony);
@@ -22,27 +21,22 @@
 
 .subtitulo-contato {
     color: var(--primary-color-ebony);
-}
-
-#subtitulo-assunto {
     width: 100%;
-    padding: 7px;
-}
-
-#subtitulo-mensagem {
+    font-weight: 600;
     margin-top: 10px;
-    margin-bottom: 5px;
 }
 
-.caixote input, .caixote textarea {
-    display: inline-block;
+/* Inputs */
+.caixote input,
+.caixote textarea {
+    width: 100%;
     margin-top: 8px;
     margin-bottom: 15px;
-    width: 100%;
-    padding: 7px;
-    border: solid 2px var(--primary-color-ebony);
+    padding: 10px;
+    border: 2px solid var(--primary-color-ebony);
     border-radius: 15px;
     background-color: var(--background-color-vanillacream);
+    outline: none;
 }
 
 label {
@@ -50,9 +44,12 @@ label {
     font-weight: 600;
 }
 
+/* Checkboxes */
 .checkboxes {
     display: grid;
-    grid-template-columns: 112px 112px 112px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    width: 100%;
     margin-bottom: 15px;
 }
 
@@ -65,65 +62,54 @@ label {
     margin-left: 5px;
 }
 
-.caixote input {
-    padding: 10px;
-    max-width: 500px;
-}
-
+/* Checkbox customizado */
 input[type="checkbox"] {
-    padding: 0;
-    max-width: 15px 15px;
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: #fff;
+    border: 2px solid var(--primary-color-ebony);
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
 }
 
+input[type="checkbox"]:checked {
+    background-color: #02AF75;
+    border-color: #00895c;
+}
+
+input[type="checkbox"]:checked::after {
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 0px;
+    width: 6px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+/* Botão */
 .button-contato {
     background-color: var(--primary-color-ebony);
+    color: var(--background-color-vanillacream);
     font-size: 14px;
     font-weight: 600;
-    color: var(--background-color-vanillacream);
     border: none;
     border-radius: 15px;
     cursor: pointer;
-    transition: all ease 0.5s;
-    white-space: nowrap;
-    width: 100px;
+    transition: 0.3s ease;
+    width: 120px;
     padding: 10px;
-    margin-top: 10px;
-    margin-left: 7rem;
+    margin: 20px auto 0 auto;
+    display: block;
 }
 
 .button-contato:hover {
     background-color: #444a40;
     transform: scale(1.05);
     color: var(--background-color-vanillacream);
-}
-
-input[type="checkbox"] {
-  appearance: none;
-  -webkit-appearance: none;
-  background-color: #fff;
-  border: 2px solid var(--primary-color);
-  width: 20px;
-  height: 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  position: relative;
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
-input[type="checkbox"]:checked {
-  background-color: #02AF75;
-  border: 2px solid #00895c;
-}
-
-input[type="checkbox"]:checked::after {
-  content: "";
-  position: absolute;
-  left: 4px;
-  top: 0px;
-  width: 6px;
-  height: 12px;
-  border: solid white;
-  border-width: 0 2px 2px 0;
-  transform: rotate(45deg);
 }

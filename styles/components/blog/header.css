@@ -4,8 +4,6 @@ header {
     justify-content: space-between;
     background-color: var(--primary-color-ebony);
     color: #f5e3c1;
-    position: sticky;
-    top: 0;
 }
 
 .logotitulo {

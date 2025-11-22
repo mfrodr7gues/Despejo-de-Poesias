@@ -4,32 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title> Contato </title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" crossorigin="anonymous" />
     <link rel="stylesheet" href="../../../styles/imports.css">
 </head>
 
 <body class="body-contato">
+
     <header>
         <div class="logotitulo">
             <img class="logo" src="/assets/blog-logo.png" alt="Logo do Despejo de Poesias">
-            <h1 class="titulo"> Despejo de Poesias </h1>
+            <h1 class="titulo">Despejo de Poesias</h1>
         </div>
+
         <nav class="navigator">
             <ul>
-                <li>
-                    <i class="fa-regular fa-address-card"></i>
-                    <a href="#"> Sobre </a>
-                </li>
-                <li>
-                    <i class="fa-regular fa-address-book"></i>
-                    <a href="/pages/blog/navigator/contato.html"> Contato </a>
-                </li>
-                <li>
-                    <i class="fa-solid fa-code"></i>
-                    <a href="../../login/login.html"> Admin </a>
-                </li>
+                <li><i class="fa-regular fa-address-card"></i><a href="#">Sobre</a></li>
+                <li><i class="fa-regular fa-address-book"></i><a href="/pages/blog/navigator/contato.html">Contato</a></li>
+                <li><i class="fa-solid fa-code"></i><a href="../../login/login.html">Admin</a></li>
             </ul>
         </nav>
     </header>
@@ -37,38 +30,41 @@
     <main>
         <div class="caixote">
 
-            <h1 class="titulo-contato"> Contate-nos! </h1>
+            <h1 class="titulo-contato">Contate-nos!</h1>
 
             <form action="#" method="post">
-                <label for="nome" class="txtInputs"> Name: </label>
-                <input type="text" id="nome" name="nome" placeholder="Anna Júlia"required>
 
-                <label for="email" class="txtInputs"> E-mail: </label>
+                <label for="nome" class="txtInputs">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Anna Júlia" required>
+
+                <label for="email" class="txtInputs">E-mail:</label>
                 <input type="email" id="email" name="email" placeholder="annajulia@gmail.com">
 
-                <h3 class="subtitulo-contato" id="subtitulo-assunto"> Assunto </h3>
+                <h3 class="subtitulo-contato">Assunto</h3>
+
                 <div class="checkboxes">
                     <div>
-                        <input type="checkbox" class="help" name="help">
-                        <label for="help"> Ajuda </label>
+                        <input type="checkbox" id="help" name="help">
+                        <label for="help">Ajuda</label>
                     </div>
 
                     <div>
-                        <input type="checkbox" class="suge" name="suge">
-                        <label for="help"> Sugestão </label>
+                        <input type="checkbox" id="suge" name="suge">
+                        <label for="suge">Sugestão</label>
                     </div>
 
                     <div>
-                        <input type="checkbox" class="prop" name="prop">
-                        <label for="help"> Feedback </label>
+                        <input type="checkbox" id="prop" name="prop">
+                        <label for="prop">Feedback</label>
                     </div>
                 </div>
 
-
-                <h3 class="subtitulo-contato" id="subtitulo-mensagem"> Mensagem </h3>
+                <h3 class="subtitulo-contato">Mensagem</h3>
                 <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
-                <button class="button-contato" type="submit"> Enviar </button>
+
+                <button class="button-contato" type="submit">Enviar</button>
             </form>
+
         </div>
     </main>
 
@@ -76,8 +72,18 @@
         <i class="fa-brands fa-instagram"></i>
         <i class="fa-brands fa-github"></i>
         <i class="fa-brands fa-linkedin"></i>
-        <div class="primeiraLinha"><h4> Info </h4> <h4> Support </h4> <h4> Marketing </h4> </div>
-        <div class="segundaLinha "><h5>Terms of Use</h5> <h5>Privacy Policy</h5></div>
+
+        <div class="primeiraLinha">
+            <h4>Info</h4> 
+            <h4>Support</h4> 
+            <h4>Marketing</h4>
+        </div>
+
+        <div class="segundaLinha">
+            <h5>Terms of Use</h5>
+            <h5>Privacy Policy</h5>
+        </div>
+
         <h6>© 2025 Despejo de Poesias</h6>
     </footer>
 
