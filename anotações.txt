@@ -1,0 +1,10 @@
+PARTE DOS ADMIN´S:
+
+- Tela de login
+- Tela de postagem
+
+PARTE DOS USUÁRIOS:
+
+- Header
+- Em destaque
+- Mi

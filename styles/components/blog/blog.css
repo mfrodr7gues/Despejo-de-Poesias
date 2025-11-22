@@ -76,16 +76,18 @@
 }
 
 .onHipe h2 {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+    font-size: 24px;
+    font-weight: 700;
     color: var(--primary-color-ebony);
 }
 
 .onHipe img {
     width: 775px;
-    border-radius: 8px;
+    border-radius: 10px;
 }
 
-.dateHipe ,.dateMArticles, .datePoesias {
+.dateHipe, .dateMArticles, .datePoesias {
     display: flex;
     font-size: 13px;
     color: #000000a3;
@@ -108,17 +110,25 @@
 }
 
 /* MOST POPULARS */
+.mostPopulars h3 {
+    margin-bottom: 30px;
+    margin-top: 1rem;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--primary-color-ebony);
+}
 
 .mostPopulars img {
     width: 104px;
-    border-radius: 8px;
-    margin-bottom: 40px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    margin-top: 10px;
 }
 
 .miniArticles {
     display: flex;
     width: 375px;
-    border-bottom: solid 3px var(--text-color-mochaearth);
+    border-bottom: solid 2px var(--primary-color-ebony);
     margin-top: 20px;
     color: var(--text-color-mochaearth);
 }
@@ -150,6 +160,12 @@
     justify-content: space-between;
 }
 
+.topLine h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--primary-color-ebony);
+}
+
 .searches {
     display: flex;
     align-items: center;
@@ -160,21 +176,33 @@
     height: 32px;
     width: 280px;
     text-indent: 10px;
-    font-family: 'Inter'
+    color: var(--primary-color-ebony);
+    font-family: 'Inter';
+    background-color: var(--background-color-vanillacream);
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border: solid 2px var(--primary-color-ebony);
+}
+
+.search:focus {
+    outline: none;
+    box-shadow: none;
 }
 
 .search::placeholder {
-    color: var(#e2e2e2);
+    color: var(#ad2d2d);
 }
 
 .searches div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 32px;
     height: 32px;
-    color: white;
-    background-color: var(--text-color-mochaearth);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    color: var(--background-color-vanillacream);
+    background-color: var(--primary-color-ebony);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
 }
 
 .poesias {
