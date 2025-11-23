@@ -14,44 +14,71 @@
 
 <body class="body-contato">
 
-
+    <!-- HEADER -->
+    <header>
+        <div class="logotitulo">
+            <img class="logo" src="../../../assets/blog-logo.png" alt="Logo do Despejo de Poesias">
+            <h1 class="titulo"> Despejo de Poesias </h1>
+        </div>
+        <nav class="navigator">
+            <ul>
+                <li>
+                    <i class="fa-regular fa-address-card"></i>
+                    <a href="/pages/blog/navigator/sobre.html"> Sobre </a>
+                </li>
+                <li>
+                    <i class="fa-regular fa-address-book"></i>
+                    <a href="/pages/blog/navigator/contato.html"> Contato </a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-code"></i>
+                    <a href="../login/login.html"> Admin </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
     <main>
-        <div class="caixote">
+        <div class="logout-contato">
+            <a href="../blog.html">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            </a>
+        </div>
 
-            <h1 class="titulo-contato">Contate-nos!</h1>
+        <div class="caixote">
+            <h1 class="titulo-contato"> Contate-nos! </h1>
 
             <form action="#" method="post">
 
-                <label for="nome" class="txtInputs">Nome:</label>
+                <label for="nome" class="txtInputs"> Nome: </label>
                 <input type="text" id="nome" name="nome" placeholder="Anna Júlia" required>
 
-                <label for="email" class="txtInputs">E-mail:</label>
+                <label for="email" class="txtInputs"> E-mail: </label>
                 <input type="email" id="email" name="email" placeholder="annajulia@gmail.com">
 
-                <h3 class="subtitulo-contato">Assunto</h3>
+                <h3 class="subtitulo-contato"> Assunto </h3>
 
                 <div class="checkboxes">
                     <div>
                         <input type="checkbox" id="help" name="help">
-                        <label for="help">Ajuda</label>
+                        <label for="help"> Ajuda </label>
                     </div>
 
                     <div>
                         <input type="checkbox" id="suge" name="suge">
-                        <label for="suge">Sugestão</label>
+                        <label for="suge"> Sugestão </label>
                     </div>
 
                     <div>
                         <input type="checkbox" id="prop" name="prop">
-                        <label for="prop">Feedback</label>
+                        <label for="prop"> Feedback </label>
                     </div>
                 </div>
 
-                <h3 class="subtitulo-contato">Mensagem</h3>
-                <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                <h3 class="subtitulo-contato"> Mensagem </h3>
+                <textarea id="mensagem" name="mensagem" rows="5" placeholder="Digite a sua mensagem aqui..."></textarea>
 
-                <button class="button-contato" type="submit">Enviar</button>
+                <button class="button-contato" type="submit"> Enviar </button>
             </form>
 
         </div>

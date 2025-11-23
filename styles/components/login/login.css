@@ -86,7 +86,7 @@
     width: 35%;
     padding: 8px;
     margin: auto;
-    transition: transform 0.25s ease;
+    transition: 0.25s ease;
 }
 
 .button-login:hover,
