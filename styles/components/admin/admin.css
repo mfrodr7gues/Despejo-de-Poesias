@@ -34,11 +34,11 @@
     font-size: 28px;
     color: var(--color-allstar-encardido);
     display: inline-block;
-    transition: transform 0.25s ease;
 }
 
 .logout-admin a:hover {
     transform: scale(1.1);
+    transition: 0.2s;
 }
 
 .lado-esquerdo {
@@ -177,7 +177,6 @@
 }
 
 .buttons-post-admin button {
-    background-color: var(--primary-color-ebony);
     color: var(--background-color-vanillacream);
     border: none;
     border-radius: 8px;
@@ -188,6 +187,14 @@
     display: flex;
     align-items: center;
     gap: 8px; 
+}
+
+.button-editar-post {
+    background-color: var(--primary-color-ebony);
+}
+
+.button-excluir-post {
+    background-color: #5c2121;
 }
 
 .carregar-mais-admin {
