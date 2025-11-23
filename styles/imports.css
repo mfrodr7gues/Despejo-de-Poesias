@@ -1,11 +1,14 @@
-@import url("./global.css");
+@import url('./global.css');
 
-@import url("./components/blog/header.css");
-@import url("./components/blog/footer.css");
+@import url('./components/blog/header.css');
+@import url('./components/blog/footer.css');
 
-@import url("./components/blog/blog.css");
+@import url('./components/blog/blog.css');
 
-@import url("./components/admin/admin.css");
-@import url("./components/login/login.css");
+@import url('./components/admin/admin.css');
+@import url('./components/login/login.css');
 
-@import url("./components/blog/navigator/contato.css");
+@import url('./components/blog/navigator/contato.css');
+
+@import url('./components/contract/politica-de-privacidade.css');
+@import url('./components/contract/termos-de-uso.css');
