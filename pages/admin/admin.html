@@ -37,7 +37,7 @@
     <main class="main-admin">
         <section class="minhas-publicacoes">
             <h3> Minhas publicações </h3>
-            <button class="button-nova-publicacao">
+            <button id="btnAdd" class="button-nova-publicacao">
                 <i class="fa-solid fa-plus"></i>
                 Novo post
             </button>
@@ -130,6 +130,71 @@
                 <button class="button-carregar-mais-admin"> Carregar mais </button>
             </section>
     </main>
+
+    <!-- Modal -->
+    <div class="modal-overlay" id="modalOverlay">
+      <div class="modal">
+        <div class="modal-header">
+          <div class="MHeader-content">
+            <h2 id="modalTitle">Criar postagem</h2>
+            <button id="btnFechar" class="close-btn">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+          <p>Preencha os dados para criar uma postagem</p>
+        </div>
+        <form id="formUsuario" class="modal-form">
+          <div class="input-group">
+            <label for="nome">Nome do autor</label>
+            <input
+              type="text"
+              id="AutorName"
+              placeholder="Informe o nome"
+              required
+            />
+          </div>
+          <div class="input-group">
+            <label for="titulo">Título</label>
+            <input
+              type="text"
+              id="titulo"
+              placeholder="Informe o título"
+              required
+            />
+          </div>
+          <div class="input-group">
+            <label for="categoria">Categoria</label>
+            <input
+              type="text"
+              id="categoria"
+              placeholder="Informe a categoria"
+              required
+            />
+          </div>
+          <div class="input-group">
+            <label for="URL imagem">URL imagem</label>
+            <input
+              type="text"
+              id="URLimg"
+              placeholder="Insira a URL de capa"
+              required
+            />
+          </div>
+          <div class="input-group">
+            <label for="assunto">Assunto</label>
+            <input
+              type="text"
+              id="assunto"
+              placeholder="Digite o conteúdo"
+              required
+            />
+          </div>
+          <div class="modal-actions">
+            <button type="submit" class="btn-submit"> Salvar </button>
+          </div>
+        </form>
+      </div>
+    </div>
         
     <script src="../../scripts/admin.js"></script>
 </body>
