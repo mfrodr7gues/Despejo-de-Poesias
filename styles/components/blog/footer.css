@@ -36,6 +36,7 @@
 
 .coluna h4 {
     margin-bottom: 1rem;
+    margin-left: 18px;
     font-size: 20px;
     font-weight: 600;
 }
@@ -56,10 +57,8 @@
     font-weight: 400;
     opacity: 0.8;
     position: relative; 
-    display: inline-block; 
 }
 
-/* Linha animada */
 .coluna ul li a::after {
     content: "";
     position: absolute;
