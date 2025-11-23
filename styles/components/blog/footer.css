@@ -81,8 +81,10 @@
 
 .icones {
     margin-top: 15px;
+    margin-left: 18px;
     display: flex;
     gap: 12px;
+
 }
 
 .icones a {
