@@ -3,11 +3,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    min-height: 100dvh;
+    padding: 1rem;
+    font-family: "Inter", sans-serif;
 }
 
 .login-conteiner {
-    background: var( --background-color-vanillacream);
+    background: var(--background-color-vanillacream);
     padding: 50px 40px;
     width: 340px;
     border-radius: 20px;
@@ -24,7 +26,7 @@
 
 .input-box {
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 28px;
 }
 
 .input-box input {
@@ -34,9 +36,7 @@
     color: var(--primary-color-ebony);
     background: transparent;
     outline: none;
-    padding: 14px;
-    padding-right: 40px;
-    padding-top: 18px;
+    padding: 14px 40px 14px 0;
     font-size: 16px;
 }
 
@@ -44,9 +44,9 @@
     position: absolute;
     top: 12px;
     left: 0;
-    color:var(--primary-color-ebony);
+    color: var(--primary-color-ebony);
     pointer-events: none;
-    transition: 0.5s;
+    transition: 0.35s ease;
     font-size: 20px;
     font-weight: 600;
 }
@@ -54,24 +54,21 @@
 .input-box input:focus + label,
 .input-box input:valid + label {
     top: -10px;
-    font-size: 18px;
-    font-weight: 600;
-    color: var(--primary-color-ebony);
+    font-size: 16px;
 }
 
-.olhinho {
+.livrinho {
     position: absolute;
-    right: 8px;
+    right: 6px;
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
     font-size: 18px;
     color: var(--primary-color-ebony);
     user-select: none;
-
 }
 
-.olhinho:hover {
+.livrinho:hover {
     color: #444a40;
 }
 
@@ -89,17 +86,61 @@
     width: 35%;
     padding: 8px;
     margin: auto;
-    transition: 0.3s;
     transition: transform 0.25s ease;
-}
-
-.button-conteiner {
-    padding-top: 1rem;
 }
 
 .button-login:hover,
 .button-login:focus {
-    transform: scale(1.02);
+    transform: scale(1.03);
     background: #444a40;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.60);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
+}
+
+@media (max-width: 768px) {
+    .login-conteiner {
+        width: 80%;
+        max-width: 320px;
+        padding: 30px 24px;
+        border-radius: 16px;
+    }
+
+    .login-conteiner h1 {
+        font-size: 26px;
+        margin-bottom: 18px;
+    }
+
+    .input-box input {
+        font-size: 15px;
+    }
+
+    .input-box label {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 400px) {
+    .login-conteiner {
+        width: 80%;
+        max-width: 260px;
+        padding: 24px 18px;
+    }
+
+    .login-conteiner h1 {
+        font-size: 22px;
+        margin-bottom: 14px;
+    }
+
+    .input-box input {
+        font-size: 14px;
+    }
+
+    .input-box label {
+        font-size: 16px;
+    }
+
+    .button-login {
+        width: 40%;
+        font-size: 14px;
+        border-radius: 12px;
+    }
 }

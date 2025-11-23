@@ -52,17 +52,34 @@
 .coluna ul li a {
     color: var(--background-color-vanillacream);
     text-decoration: none;
-    transition: 0.1s;
     font-size: 16px;
     font-weight: 400;
     opacity: 0.8;
+    position: relative; 
+    display: inline-block; 
+}
+
+/* Linha animada */
+.coluna ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px; 
+    width: 0%;
+    height: 2px;
+    background: currentColor;
+    transition: width 0.45s ease;
+    opacity: 0.2;
 }
 
 .coluna ul li a:hover {
-    color: white;
+    color: var(--background-color-vanillacream);
 }
 
-/* Ícones */
+.coluna ul li a:hover::after {
+    width: 100%;
+}
+
 .icones {
     margin-top: 15px;
     display: flex;
@@ -84,11 +101,10 @@
     transform: translateY(-5px);
 }
 
-/* Linha divisória */
 .rodape hr {
     background-color: var(--background-color-vanillacream);
     opacity: 0.2;
-    height: 1px;
+    height: 2px;
     margin: 20px 0;
 }
 
