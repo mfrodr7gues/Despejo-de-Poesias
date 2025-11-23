@@ -25,7 +25,8 @@ loginTry.addEventListener("click", e => {
 
     for (let i = 0; i < adms.length; i++) {
         if (emailTry === adms[i].email && senhaTry === adms[i].senha) {
-            open ("../admin/admin.html");
+            location.href = "../admin/admin.html";
+            return;
         }
         else {
             senha.style.borderBottom = "2px solid #ff6868ff";

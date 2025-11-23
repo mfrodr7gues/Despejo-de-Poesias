@@ -7,4 +7,11 @@ PARTE DOS USUÁRIOS:
 
 - Header
 - Em destaque
-- Mi
+- Mais populares
+- Poesias
+- Footer
+
+NAVEGADOR:
+
+- Sobre
+- Contato

@@ -86,7 +86,7 @@
     width: 35%;
     padding: 8px;
     margin: auto;
-    transition: transform 0.25s ease;
+    transition: 0.25s ease;
 }
 
 .button-login:hover,
@@ -94,6 +94,20 @@
     transform: scale(1.03);
     background: #444a40;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
+}
+
+.logout-login i {
+    position: fixed; 
+    top: 30px;           
+    right: 30px;         
+    font-size: 28px;
+    color: var(--background-color-vanillacream);
+    cursor: pointer;
+}
+
+.logout-login i:hover {
+    transform: scale(1.1);
+    transition: 0.2s;
 }
 
 @media (max-width: 768px) {
