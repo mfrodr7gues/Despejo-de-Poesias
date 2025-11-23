@@ -235,5 +235,14 @@
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
-    transition: background-color 0.25s ease;
+    transition: 0.25s ease;
+}
+
+.button-carregar-mais-admin:hover {
+    background-color: var(--primary-color-ebony);
+    color: var(--background-color-vanillacream);
+}
+
+.button-carregar-mais-admin:active {
+    background-color:  var(--primary-color-ebony);
 }
