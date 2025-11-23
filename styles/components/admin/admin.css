@@ -1,0 +1,210 @@
+.header-admin {
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logotipo-admin {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-left: 120px;
+}
+
+.logo-admin {
+    width: 120px;
+    height: auto;
+}
+
+.logotipo-admin h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--color-allstar-encardido);
+}
+
+.mensagem-admin p {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--color-allstar-encardido);
+}
+
+.logout-admin a {
+    font-size: 28px;
+    color: var(--color-allstar-encardido);
+    display: inline-block;
+    transition: transform 0.25s ease;
+}
+
+.logout-admin a:hover {
+    transform: scale(1.1);
+}
+
+.lado-esquerdo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+    margin-right: 120px;
+}
+
+.main-admin {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.minhas-publicacoes {
+    width: 90%;
+    max-width: 1200px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.minhas-publicacoes h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--primary-color-ebony);
+}
+
+.minhas-publicacoes button {
+    background-color: var(--primary-color-ebony);
+    color: var(--background-color-vanillacream);
+    border: none;
+    border-radius: 10px;
+    padding: 12px 18px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.25s ease;
+}
+
+/* Estado vazio: 
+
+.nenhum-post {
+    margin-top: 9rem;
+}
+
+.nenhum-post h1, h3, p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nenhum-post h1 {
+    color: var(--primary-color-ebony);
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.nenhum-post h3 {
+    color: var(--primary-color-ebony);
+    margin-bottom: 5px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.nenhum-post p {
+    color: var(--primary-color-ebony);
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: 400;
+}
+*/
+
+/* Estado preenchido: */
+
+.lista-publicacoes {
+    width: 90%;
+    max-width: 1200px;
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6em;
+}
+
+.post-admin img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.post-admin h3 {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--primary-color-ebony);
+    margin-top: 10px;
+    margin-bottom: 6px;
+}
+
+.post-admin p {
+    font-size: 16px;
+    color: rgb(98, 94, 94);
+    margin-bottom: 10px;
+}
+
+.post-details {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.post-details p {
+    font-size: 14px;
+    color: rgb(98, 94, 94);
+}
+
+.post-details i {
+    color: var(--primary-color-ebony);
+}
+
+.buttons-post-admin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.buttons-post-admin button {
+    background-color: var(--primary-color-ebony);
+    color: var(--background-color-vanillacream);
+    border: none;
+    border-radius: 8px;
+    padding: 10px 32px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px; 
+}
+
+.carregar-mais-admin {
+    margin-top: 2rem;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-carregar-mais-admin {
+    background-color: transparent;
+    color: var(--primary-color-ebony);
+    border: solid 2px var(--primary-color-ebony);
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.25s ease;
+}
