@@ -1,11 +1,20 @@
 {
-    "posts": [
-        {
-            "Autor": "Luiz Otávio",
-            "Title": "Cachorro morre comendo pão com banana",
-            "Categoria": "Notícia Urgente",
-            "URL": "https://i1.sndcdn.com/artworks-LrS8cXZLsrgthIBy-rGdQ2Q-t500x500.jpg",
-            "Assunto": "Cachorro morre após ingerir grandes quantias de alimento denominado fitness entre os grupos digitais."
-        }
-    ]
+  "posts": [
+    {
+      "id": "0cc9",
+      "Autor": "Luiz Otávio",
+      "Title": "Cachorro morre comendo pão com banana",
+      "Categoria": "Notícia Urgente",
+      "URL": "https://i1.sndcdn.com/artworks-LrS8cXZLsrgthIBy-rGdQ2Q-t500x500.jpg",
+      "Assunto": "Cachorro morre após ingerir grandes quantias de alimento denominado fitness entre os grupos digitais."
+    },
+    {
+      "id": "77ec",
+      "Autor": "Aline",
+      "Title": "Beijo com gosto de chuva",
+      "Categoria": "Romance",
+      "URL": "https://www.petz.com.br/blog/wp-content/uploads/2019/07/vida-de-gato.jpg",
+      "Assunto": "sim"
+    }
+  ]
 }
