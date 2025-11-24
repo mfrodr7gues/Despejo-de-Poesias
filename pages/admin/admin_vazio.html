@@ -43,96 +43,16 @@
             </button>
         </section>
 
-        <!-- Estado vazio
-        <section class="nenhum-post">
+        <div id="postGrid" class="lista-publicacoes">
+
+        </div>
+
+        <section id="nenhum-post" class="nenhum-post">
             <h1> :/ </h1>
             <h3> Ops... Nenhuma publicação encontrada! </h3>
             <p> Não há poesias postadas. </p>
         </section>
-        -->
         
-        <!-- Estado preenchido -->
-        <section class="lista-publicacoes">
-            <div class="post-admin">
-                <img src="https://oscardambrosio.com.br/textos/imagens/m18_u20_10092018-06-50-08.jpg" alt="Imagem da Publicação">
-                <h3> Nome da poesia </h3>
-                <p> Nome do autor </p>
-                
-                <div class="post-details">
-                    <p><i class="fa-regular fa-calendar fa-lg"></i> 19, setembro </p>
-                    <p> • </p>
-                    <p><i class="fa-solid fa-circle-user"></i> Fernanda Rodrigues </p>
-                </div>
-                
-                <div class="buttons-post-admin">
-                    <button class="button-editar-post">
-                        <i class="fa-solid fa-feather"></i>
-                        Editar
-                    </button>
-
-                    <button class="button-excluir-post">
-                        <i class="fa-solid fa-trash"></i>
-                        Excluir
-                    </button>
-                </div>
-            </div>
-            
-            <div class="post-admin">
-                <img src="https://oscardambrosio.com.br/textos/imagens/m18_u20_10092018-06-50-08.jpg" alt="Imagem da Publicação">
-                <h3> Nome da poesia </h3>
-                <p> Nome do autor </p>
-                    
-                <div class="post-details">
-                    <p class="icon-data-post"><i class="fa-regular fa-calendar fa-lg"></i> 19, setembro </p>
-                    <p clas="icon-pontinho-post"> • </p>
-                    <p class="icon-autor-post"><i class="fa-solid fa-circle-user"></i> Fernanda Rodrigues </p>
-                </div>
-                    
-                <div class="buttons-post-admin">
-                    <button class="button-editar-post">
-                        <i class="fa-solid fa-feather"></i>
-                            Editar
-                    </button>
-
-                    <button class="button-excluir-post">
-                        <i class="fa-solid fa-trash"></i>
-                            Excluir
-                    </button>
-                </div>
-            </div>
-                
-                <div class="post-admin">
-                    <img src="https://oscardambrosio.com.br/textos/imagens/m18_u20_10092018-06-50-08.jpg" alt="Imagem da Publicação">
-                    <h3> Nome da poesia </h3>
-                    <p> Nome do autor </p>
-                    
-                    <div class="post-details">
-                        <p><i class="fa-regular fa-calendar fa-lg"></i> 19, setembro </p>
-                        <p> • </p>
-                        <p><i class="fa-solid fa-circle-user"></i> Fernanda Rodrigues </p>
-                    </div>
-                    
-                <div class="buttons-post-admin">
-                    <button class="button-editar-post">
-                        <i class="fa-solid fa-feather"></i>
-                            Editar
-                    </button>
-
-                    <button class="button-excluir-post">
-                        <i class="fa-solid fa-trash"></i>
-                            Excluir
-                    </button>
-                </div>
-            </div>
-        </section>
-            
-            <section class="carregar-mais-admin">
-                <button class="button-carregar-mais-admin"> Carregar mais </button>
-            </section>
-    </main>
-
-
-    
     <!-- Modal -->
     <div class="modal-overlay" id="modalOverlay">
       <div class="modal">
@@ -150,7 +70,7 @@
             <label for="nome">Nome do autor</label>
             <input
               type="text"
-              id="AutorName"
+              id="autorName"
               placeholder="Informe o nome"
               required
             />

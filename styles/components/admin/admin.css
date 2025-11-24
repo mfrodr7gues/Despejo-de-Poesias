@@ -242,15 +242,13 @@
   }
 }
 
-
-
-/* Estado vazio: 
+/* Estado vazio */
 
 .nenhum-post {
     margin-top: 9rem;
 }
 
-.nenhum-post h1, h3, p {
+.nenhum-post h1,.nenhum-post h3,.nenhum-post p {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -275,7 +273,6 @@
     font-size: 18px;
     font-weight: 400;
 }
-*/
 
 /* Estado preenchido: */
 
@@ -330,7 +327,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 3rem;
+    gap: 2rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
