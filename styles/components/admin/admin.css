@@ -248,7 +248,7 @@
     margin-top: 9rem;
 }
 
-.nenhum-post h1, h3, p {
+.nenhum-post h1,.nenhum-post h3,.nenhum-post p {
     display: flex;
     align-items: center;
     justify-content: center;
