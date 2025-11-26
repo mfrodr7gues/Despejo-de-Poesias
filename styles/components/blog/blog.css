@@ -62,7 +62,7 @@
     background-color: #edd296;
 }
 
-/* SEÇÃO DE EM DESTAQUE E POPULARES */
+/* EM DESTAQUE */
 
 .contents {
     padding: 50px;
@@ -108,7 +108,7 @@
     display: flex;
 }
 
-/* MAIS POPULARS */
+/* MAIS POPULARES */
 .mostPopulars h3 {
     margin-bottom: 30px;
     margin-top: 1rem;
@@ -133,13 +133,13 @@
 }
 
 .MAContent {
-    margin-left: 20px;
-    padding: 5px;
+    margin-left: 15px;
+    margin-top: 10px;
 }
 
 .MACategory {
     margin-bottom: 10px;
-    color: var(--text-color-mochaearth);
+    color: var(--primary-color-ebony);
     font-weight: 500;
     font-size: 14px;
 }
