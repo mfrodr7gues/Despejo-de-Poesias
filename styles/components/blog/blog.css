@@ -1,17 +1,19 @@
 /* SEÇÃO DE ESPOSIÇÃO */
+
 .expo {
     background-color: var(--primary-color-ebony);
-    color: #f5e3c1;
-    padding: 85px 0;
+    color: var(--color-allstar-encardido);
+    padding: 60px 0;
 }
 
 .above {
-    background-color: #6d5656;
+    background-color: var(--color-allstar-encardido);
+    color: var(--primary-color-ebony);
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: 500;
-    width: 275px;
+    width: 300px;
     height: 25px;
     border-radius: 50px;
     margin: auto;
@@ -50,16 +52,10 @@
     padding: 9px 18px;
     margin: 0;
     white-space: nowrap;
-    background-color: #f5e3c1;
+    background-color: var(--color-allstar-encardido);
     color: var(--primary-color-ebony);
     font-weight: 600;
     cursor: pointer;
-}
-
-.button-blog:hover {
-    transform: scale(1.1);
-    transition: 500ms;
-    background-color: #edd296;
 }
 
 /* EM DESTAQUE */
@@ -77,19 +73,30 @@
 .onHipe h2 {
     margin-bottom: 25px;
     font-size: 24px;
-    font-weight: 700;
+    font-weight: 800;
     color: var(--primary-color-ebony);
 }
 
 .onHipe img {
-    width: 775px;
+    width: 790px;
     border-radius: 10px;
+}
+
+.category-inforBar {
+    color: var(--primary-color-ebony);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.dataHipe i {
+    color: var(--primary-color-ebony);
+    font-size: 10px;
 }
 
 .dateHipe, .dateMArticles, .datePoesias {
     display: flex;
-    font-size: 13px;
-    color: #000000a3;
+    font-size: 14px;
+   
     gap: 6px;
     margin-top: 5px;
 }
@@ -97,6 +104,7 @@
 .infoBar {
     display: flex;
     justify-content: space-between;
+    color: var(--primary-color-ebony);
 }
 
 .infoBar {
@@ -108,19 +116,24 @@
     display: flex;
 }
 
+.onHipe h3 {
+    color: var(--primary-color-ebony);
+    font-size: 20px;
+    font-weight: 600;
+}
+
 /* MAIS POPULARES */
+
 .mostPopulars h3 {
-    margin-bottom: 30px;
-    margin-top: 1rem;
-    font-size: 18px;
-    font-weight: 700;
+    font-size: 24px;
+    font-weight: 800;
     color: var(--primary-color-ebony);
 }
 
 .mostPopulars img {
     width: 104px;
     border-radius: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     margin-top: 10px;
 }
 
@@ -128,24 +141,29 @@
     display: flex;
     width: 375px;
     border-bottom: solid 2px var(--primary-color-ebony);
-    margin-top: 20px;
+    margin-top: 17px;
     color: var(--text-color-mochaearth);
 }
 
 .MAContent {
     margin-left: 15px;
     margin-top: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--primary-color-ebony);
 }
 
 .MACategory {
     margin-bottom: 10px;
-    color: var(--primary-color-ebony);
     font-weight: 500;
-    font-size: 14px;
+    font-size: 16px;
+    color: var(--primary-color-ebony);
 }
 
 .MATitle {
-    color: black;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--primary-color-ebony);
 }
 
 /* POESIAS POSTADAS*/
@@ -161,7 +179,7 @@
 
 .topLine h2 {
     font-size: 24px;
-    font-weight: 700;
+    font-weight: 800;
     color: var(--primary-color-ebony);
 }
 
@@ -188,10 +206,6 @@
     box-shadow: none;
 }
 
-.search::placeholder {
-    color: var(#ad2d2d);
-}
-
 .searches div {
     display: flex;
     align-items: center;
@@ -207,10 +221,11 @@
 .poesias {
     display: grid;
     justify-content: center;
-    grid-template-columns: 384px 384px 384px;
-    column-gap: 7rem;
+    grid-template-columns: 200px 200px 200px;
+    column-gap: 250px;
     row-gap: 3rem;
     padding-top: 30px;
+    padding-right: 20rem;
 }
 
 .poesia {
