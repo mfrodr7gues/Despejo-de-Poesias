@@ -51,7 +51,7 @@ async function listarPosts(filtro = "") {
       card.innerHTML = `
         ${p.URL ? `<img src="${p.URL}" alt="${p.Title || 'Imagem da Publicação'}">` : ""}
         <h3>${p.Title || "Nome da poesia"}</h3>
-        <p>${p.Autor || "Nome do autor"}</p>
+        <p>${p.Categoria || "Nome do autor"}</p>
         
         <div class="post-details">
           <p class="icon-data-post"><i class="fa-regular fa-calendar fa-lg"></i> ${p.Data || p.date || ""}</p>
@@ -114,8 +114,10 @@ formUsuario.onsubmit = async (e) => {
     Title: postTitle.value.trim(),
     Categoria: postCate.value.trim(),
     URL: URLimg.value.trim(),
-    Assunto: assunto.value.trim()
+    Assunto: assunto.value.trim(),
+    Data: new Date().toLocaleDateString("pt-BR")
   };
+
 
   try {
     if (editId) {
