@@ -33,7 +33,7 @@ header {
 
 .navigator ul li {
     margin-left: 3rem;
-    position: relative; /* ADICIONE ESTA LINHA */
+    position: relative;
 }
 
 .navigator ul li a {
