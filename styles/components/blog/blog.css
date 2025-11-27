@@ -79,6 +79,10 @@
     transform: translateY(-2px);
 }
 
+
+
+/* Estado preenchido */
+
 /* EM DESTAQUE */
 .contents {
     display: grid;
@@ -295,4 +299,129 @@
     gap: 6px;
     font-size: 12px;
     color: var(--primary-color-ebony);
+}
+
+
+
+/* Estado vazio */
+.estado-vazio {
+    text-align: center;
+    padding: 40px 30px;
+    color: var(--text-color-mochaearth);
+    background-color: var(--background-color-vanillacream);
+    border-radius: 10px;
+    border: 2px dashed rgba(139, 121, 105, 0.3);
+    margin: 20px 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.estado-vazio.grande {
+    padding: 60px 40px;
+    margin: 30px 0;
+
+}
+
+.estado-vazio i {
+    font-size: 42px;
+    margin-bottom: 20px;
+    opacity: 0.6;
+    color: var(--primary-color-ebony);
+}
+
+.estado-vazio h3 {
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+    color: var(--primary-color-ebony);
+    font-weight: 700;
+}
+
+.estado-vazio p {
+    font-size: 1rem;
+    margin-bottom: 25px;
+    opacity: 0.8;
+    line-height: 1.5;
+    color: var(--text-color-mochaearth);
+    font-weight: 400;
+}
+
+.estado-vazio .button-blog {
+    border: 2px solid var(--primary-color-ebony);
+    color: var(--primary-color-ebony);
+    background-color: transparent;
+    font-weight: 600;
+    padding: 10px 24px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.estado-vazio .button-blog:hover {
+    background-color: var(--primary-color-ebony);
+    color: var(--background-color-vanillacream);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.onHipe .estado-vazio {
+    min-height: 500px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mostPopulars .estado-vazio {
+    min-height: 500px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.articles .estado-vazio.grande {
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contents {
+    display: grid;
+    grid-template-columns: 2fr 1fr; 
+    gap: 40px;
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: start; 
+}
+
+/* Garante que as seções ocupem o espaço do grid */
+.onHipe {
+    width: 100%;
+    grid-column: 1; /* Coluna da esquerda */
+}
+
+.mostPopulars {
+    width: 100%;
+    grid-column: 2; /* Coluna da direita */
+}
+
+/* Esconde conteúdo normal quando mostra estado vazio */
+.onHipe:has(.estado-vazio) img,
+.onHipe:has(.estado-vazio) .infoBar,
+.onHipe:has(.estado-vazio) h3:not(.estado-vazio h3) {
+    display: none;
+}
+
+.mostPopulars:has(.estado-vazio) .miniArticles-super {
+    display: none;
+}
+
+.articles:has(.estado-vazio) .poesias {
+    display: none;
+}
+
+.articles {
+    grid-column: 1 / -1; /* Ocupa ambas as colunas */
+    width: 100%;
 }

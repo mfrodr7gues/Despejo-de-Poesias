@@ -8,12 +8,14 @@
     <link rel="icon" type="image/png" href="/assets/blog-logo.png">
     <link rel="stylesheet" href="/styles/imports.css">
 
+    <!-- LINKS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 
-<body class="body-admin">
+<body class="body-adminvazio">
 
+  <!-- HEADER DA PÁGINA DOS ADMIN'S -->
     <header class="header-admin">
         <div class="logotipo-admin">
             <img class="logo-admin" src="/assets/blog-logo.png" alt="Logotipo do Despejo de Poesias">
@@ -34,6 +36,7 @@
         </div>
     </header>
 
+    <!-- TELA DOS ADMIN'S -->
     <main class="main-admin">
         <section class="minhas-publicacoes">
             <h3> Minhas publicações </h3>
@@ -47,13 +50,15 @@
 
         </div>
 
+        <!-- ESTADO VAZIO : Tela dos admin's -->
         <section id="nenhum-post" class="nenhum-post">
-            <h1> :/ </h1>
+            <i class="fas fa-feather-alt fa-3x"></i>
             <h3> Ops... Nenhuma publicação encontrada! </h3>
             <p> Não há poesias postadas. </p>
         </section>
+    </main>
         
-    <!-- Modal -->
+    <!-- MODAL PARA PREENCHER OS DETALHES DE CADA POSTAGEM -->
     <div class="modal-overlay" id="modalOverlay">
       <div class="modal">
         <div class="modal-header">

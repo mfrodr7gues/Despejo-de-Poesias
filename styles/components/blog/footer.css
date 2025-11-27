@@ -116,7 +116,6 @@
     color: var(--background-color-vanillacream);
 }
 
-/* Botão para subir ao topo */
 .voltar-topo {
     position: fixed;
     background: var(--background-color-vanillacream);
@@ -132,4 +131,13 @@
 
 .voltar-topo:hover {
     transform: translateY(-4px);
+}
+
+/* Responsividade */
+@media (max-width: 400px) {
+    /* Mobile */
+}
+
+@media (max-width: 768px) {
+    /* Tablet */
 }

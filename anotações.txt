@@ -1,20 +1,17 @@
 PARTE DOS ADMIN´S:
 
-- Tela de login
-- Tela de postagem
+- Tela de login (FEITO)
+- Tela de postagem (FEITO)
 
 PARTE DOS USUÁRIOS:
 
-- Header
-- Em destaque
-- Mais populares
-- Poesias
-- Footer
+- Header (FEITO)
+- Em destaque (FEITO)
+- Mais populares (FEITO)
+- Poesias (FEITO)
+- Footer (FEITO)
 
 NAVEGADOR:
 
 - Sobre
 - Contato
-
-ADICIONAR HOVER'S NO Header
-AJEITAR OS BOTÕES NA EXPOSIÇÃO

@@ -25,7 +25,7 @@ loginTry.addEventListener("click", e => {
 
     for (let i = 0; i < adms.length; i++) {
         if (emailTry === adms[i].email && senhaTry === adms[i].senha) {
-            location.href = "../admin/admin_vazio.html";
+            location.href = "../admin/admin-vazio.html";
             return;
         }
         else {
@@ -42,4 +42,3 @@ function mostrarSenha() {
         senha.type = "password";
     }
 }
-
