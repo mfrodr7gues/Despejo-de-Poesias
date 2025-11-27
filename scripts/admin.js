@@ -101,7 +101,7 @@ async function listarPosts(filtro = "") {
   }
 }
 
-const autName = document.getElementById("autorName");
+const autName = document.getElementById("AutorName");
 const postTitle = document.getElementById("titulo");
 const postCate = document.getElementById("categoria");
 const URLimg = document.getElementById("URLimg");
