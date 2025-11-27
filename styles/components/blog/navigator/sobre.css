@@ -24,11 +24,34 @@
 
 .sobre-container {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     gap: 40px;
-    margin-top: 30px;
+    margin: 40px auto;
+    justify-content: center;
 }
 
 .texto-container {
     max-width: 600px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 500px);
+    gap: 3rem;
+    margin-bottom: 50px;
+    color: white;
+    padding: 10px;
+}
+
+.cards div {
+    background-color: var(--primary-color-ebony);
+    text-align: center;
+    border-radius: 12px;
+    width: 310px;
+}
+
+.cards img {
+    align-items: center;
+    width: 100px;
+    border-radius: 15px;
 }
