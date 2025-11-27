@@ -3,7 +3,7 @@ header {
     align-items: center;
     justify-content: space-between;
     background-color: var(--primary-color-ebony);
-    color: #f5e3c1;
+    color: var(--color-allstar-encardido);
 }
 
 .logotitulo {
@@ -33,11 +33,28 @@ header {
 
 .navigator ul li {
     margin-left: 3rem;
+    position: relative; /* ADICIONE ESTA LINHA */
 }
 
 .navigator ul li a {
     text-decoration: none;
-    color: #f5e3c1;
+    color: var(--color-allstar-encardido);
     font-size: 18px;
     font-weight: 600;
+    position: relative; 
+}
+
+.navigator ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px; 
+    width: 0%;
+    height: 2px;
+    background: currentColor;
+    transition: width 0.45s ease;
+}
+
+.navigator ul li a:hover::after {
+    width: 100%;
 }

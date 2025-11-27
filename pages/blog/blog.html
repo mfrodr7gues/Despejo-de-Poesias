@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body class="body-blog">
     <!-- HEADER -->
     <header>
         <div class="logotitulo">
@@ -38,22 +38,27 @@
             </ul>
         </nav>
     </header>
-
-    <main>
-        <!-- SEÇÃO DE ESPOSIÇÃO -->
-        <section class="expo">
-            <div class="info">
-                <!-- <div class="above"> Poesias para seu coração literário </div> -->
-                <h1> O blog para apaixonados por poesias. </h1>
-                <p> Aqui, despejamos poesias quando já não cabem mais no peito. </p>
-                <p> Sinta-se à vontade. </p>
-
-                <div class="buttons-blog">
-                    <button class="button-blog"> Conhecer mais </button>
-                    <button class="button-blog"> Ler poesias </button>   
-                </div>
+    
+    <!-- SEÇÃO DE ESPOSIÇÃO -->
+    <section class="expo">
+        <div class="expo-contents">
+            <div class="citacao-super">
+                <div class="citacao"> "Não sou ninguém! E quem é você? Ninguém, também?" </div>
             </div>
-        </section>
+            <h1> O blog para apaixonados por poesias. </h1>
+            <div class="p-contents">
+                <p> Aqui, despejamos poesias quando já não cabem mais no peito. </p>
+                <p class="aviso"> Sinta-se à vontade. </p>
+            </div>
+
+            <div class="buttons-blog">
+                <button class="button-blog" onclick="window.location.href='../blog/navigator/sobre.html'"> Conhecer mais </button>
+                <button class="button-blog" onclick="window.location.href='#poesias-postadas'"> Ler poesias </button>   
+            </div>
+        </div>
+    </section>
+
+    <main class="main-blog">
         
         <!-- EM DESTAQUE -->
         <section>
@@ -75,41 +80,44 @@
                 <!-- MAIS POPULARES -->
                 <section class="mostPopulars">
                     <h3> Mais populares </h3>
-                    <div class="miniArticles">
-                        <img src="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/05/gato-laranja-e1748043537291.jpg?w=1200&h=1200&crop=1">
-                        <div class="MAContent">
-                            <p class="MACategory"> Categoria </p>
-                            <p class="MATitle"> Título </p>
-                            <div class="dateMArticles">
-                                <p> Data </p>
-                                <p> • </p>
-                                <p> Última edição </p>
+                    <div class="miniArticles-super">
+
+                        <div class="miniArticles">
+                            <img src="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/05/gato-laranja-e1748043537291.jpg?w=1200&h=1200&crop=1">
+                            <div class="MAContent">
+                                <p class="MACategory"> Categoria </p>
+                                <p class="MATitle"> Título </p>
+                                <div class="dateMArticles">
+                                    <p> Data </p>
+                                    <p> • </p>
+                                    <p> Última edição </p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="miniArticles"> 
-                        <img src="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/09/decifrar-o-que-seu-gato-quer-dizer.jpg?w=1200&h=1200&crop=1">
-                        <div class="MAContent">
-                            <p class="MACategory"> Categoria </p>
-                            <p class="MATitle"> Título </p>
-                            <div class="dateMArticles">
-                                <p> Data </p>
-                                <p> • </p>
-                                <p> Última edição </p>
+                        
+                        <div class="miniArticles"> 
+                            <img src="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/09/decifrar-o-que-seu-gato-quer-dizer.jpg?w=1200&h=1200&crop=1">
+                            <div class="MAContent">
+                                <p class="MACategory"> Categoria </p>
+                                <p class="MATitle"> Título </p>
+                                <div class="dateMArticles">
+                                    <p> Data </p>
+                                    <p> • </p>
+                                    <p> Última edição </p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="miniArticles">
-                        <img src="https://premierpet.com.br/wp-content/uploads/2025/03/model-banner-linguagemcorporal-mobile-v1-1024x1024.png">
-                        <div class="MAContent">
-                            <p class="MACategory"> Categoria </p>
-                            <p class="MATitle"> Título </p>
-                            <div class="dateMArticles">
-                                <p> Data </p>
-                                <p> • </p>
-                                <p> Última edição </p>
+                        
+                        <div class="miniArticles">
+                            <img src="https://premierpet.com.br/wp-content/uploads/2025/03/model-banner-linguagemcorporal-mobile-v1-1024x1024.png">
+                            <div class="MAContent">
+                                <p class="MACategory"> Categoria </p>
+                                <p class="MATitle"> Título </p>
+                                <div class="dateMArticles">
+                                    <p> Data </p>
+                                    <p> • </p>
+                                    <p> Última edição </p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -117,7 +125,7 @@
             </div>
         
             <!-- POESIAS POSTADAS -->
-            <section class="articles">
+            <section class="articles" id="poesias-postadas">
                 <div class="topLine">
                     <h2> Poesias postadas </h2>
                     <div class="searches">
