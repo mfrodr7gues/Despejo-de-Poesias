@@ -106,6 +106,7 @@ const postTitle = document.getElementById("titulo");
 const postCate = document.getElementById("categoria");
 const URLimg = document.getElementById("URLimg");
 const assunto = document.getElementById("assunto");
+const rank = document.getElementById("rank");
 
 formUsuario.onsubmit = async (e) => {
   e.preventDefault();
@@ -115,7 +116,8 @@ formUsuario.onsubmit = async (e) => {
     Categoria: postCate.value.trim(),
     URL: URLimg.value.trim(),
     Assunto: assunto.value.trim(),
-    Data: new Date().toLocaleDateString("pt-BR")
+    Data: new Date().toLocaleDateString("pt-BR"),
+    Rank: rank.value.trim()
   };
 
 
