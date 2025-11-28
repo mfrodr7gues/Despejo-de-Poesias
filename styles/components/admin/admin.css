@@ -163,7 +163,7 @@
 }
 
 .input-group {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .input-group label {
@@ -220,6 +220,12 @@
 .btn-submit:hover {
   background: #444a40;
   transform: translateY(-1px);
+}
+
+.rank {
+  border: 2px solid var(--primary-color-ebony);
+  padding: 5px;
+  border-radius: 7px;
 }
 
 /* Animações */
