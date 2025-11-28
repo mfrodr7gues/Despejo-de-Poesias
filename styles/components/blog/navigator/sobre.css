@@ -1,14 +1,13 @@
 .cabecalho {
-    color: var(--text-color-mochaearth);
     padding: 40px 20px;
     text-align: center;
+    font-size: 20px;
 }
 
 .imagem-sobre {
     width: 500px;
     height: auto;
     border-radius: 10px;
-    margin-top: 20px;
 }
 
 .sobre-container {
@@ -24,23 +23,25 @@
 }
 
 .cards {
-    display: grid;
-    grid-template-columns: repeat(3, 500px);
-    gap: 1px;
+    display: flex;
+    gap: 25px;
     margin-bottom: 50px;
     margin-left: 175px;
     color: white;
     padding: 10px;
+    object-fit: cover;
 }
 
 .cards div {
     background-color: var(--primary-color-ebony);
     text-align: center;
     border-radius: 12px;
-    width: 310px;
+    width: 355px;
+    height: 250px;
 }
 
 .cards img {
+    margin-top: 25px;
     align-items: center;
     width: 100px;
     border-radius: 15px;
@@ -58,6 +59,30 @@
     border-radius: 10px;
     max-width: 600px;
     margin: 0 auto 40px auto;
+}
+
+
+.profile {
+    display: grid;
+    grid-template-columns: repeat(3, 500px);
+    gap: 1px;
+    margin-bottom: 50px;
+    margin-left: 175px;
+    color: white;
+    padding: 10px;
+}
+
+.profile div {
+    background-color: var(--primary-color-ebony);
+    text-align: center;
+    border-radius: 12px;
+    width: 310px;
+}
+
+.profile img {
+    align-items: center;
+    width: 100px;
+    border-radius: 15px;
 }
 
 .contatar {
@@ -82,3 +107,4 @@
     transition: background-color 0.3s ease;
     margin-top: 20px;
 }
+
