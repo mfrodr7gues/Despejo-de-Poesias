@@ -8,7 +8,6 @@
     <link rel="icon" type="image/png" href="/assets/blog-logo.png"> 
     <link rel="stylesheet" href="../../styles/imports.css">
 
-    <!-- LINKS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,7 +18,6 @@
 
     <!-- HEADER DO BLOG -->
     <header>
-        <!-- Logotipo do blog -->
         <div class="logotitulo">
             <img class="logo" src="../../../assets/blog-logo.png" alt="Logo do Despejo de Poesias">
             <h1 class="titulo"> Despejo de Poesias </h1>
@@ -68,18 +66,45 @@
             <div class="contents">
                 <!-- EM DESTAQUE -->
                 <section class="onHipe">
-                    <h2> Em destaque </h2>
-                    <div class="estado-vazio">
+                    <h2>Em destaque</h2>
+
+                    <div class="destaque-card" data-status="fill" style="display: none;">
+                        <div class="destaque-img-wrapper">
+                            <img class="destaque-img" src="" alt="Imagem do destaque">
+                        </div>
+
+                        <div class="destaque-content">
+                            <div style="display: flex; justify-content: space-between;">
+                                <span class="destaque-categoria"></span>
+                                <div class="destaque-data-wrapper">
+                                    <i class="fa-regular fa-clock"></i>
+                                    <span class="destaque-data"></span>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <h3 class="destaque-titulo"></h3>
+                                <p class="destaque-assunto"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ESTADO VAZIO -->
+                    <div class="estado-vazio destaque-vazio" data-status="empty">
                         <i class="fas fa-star fa-lg"></i>
-                        <h3> Nenhuma poesia em destaque </h3>
-                        <p> Aguardando poesias especiais para destacar. </p>
+                        <h3>Nenhum post em destaque</h3>
+                        <p>Aguardando postagem com rank mais alto.</p>
                     </div>
                 </section>
 
                 <!-- MAIS POPULARES -->
-                <section class="mostPopulars">
+                <section id="mostPopulars" class="mostPopulars">
                     <h3> Mais populares </h3>
-                    <div class="estado-vazio">
+
+                    <div class="miniArticles-super" style="display: none;"></div>
+
+                    <!-- ESTADO VAZIO -->
+                    <div class="estado-vazio popular-vazio">
                         <i class="fas fa-chart-line fa-lg"></i>
                         <h3> Sem poesias populares </h3>
                         <p> As poesias ainda não receberam engajamento suficiente. </p>
@@ -97,13 +122,16 @@
                     <div class="searchIcon"><i class="fa-solid fa-magnifying-glass"></i></div>
                 </div>
             </div>
-            
-            <div class="estado-vazio grande">
+
+            <div class="poesias" style="display: none;"></div>
+
+            <!-- ESTADO VAZIO -->
+            <div class="estado-vazio grande poesias-vazio">
                 <i class="fas fa-feather-alt"></i>
                 <h3> Ops... Nenhuma publicação encontrada! </h3>
                 <p> Não há poesias postadas ainda. </p>
                 <button class="button-blog" onclick="window.location.href='../login/login.html'">
-                    Sou admin <3
+                    Sou admin &lt;3
                 </button>
             </div>
         </section>
@@ -112,8 +140,6 @@
     <!-- FOOTER DO BLOG -->
     <footer class="rodape">
         <div class="conteudo-rodape">
-
-            <!-- Informações -->
             <div class="coluna-blog">
                 <h3> Despejo de Poesias </h3>
                 <p> As poesias publicadas neste site são de domínio público ou possuem autorização expressa dos autores para exibição.
@@ -152,7 +178,6 @@
                 </ul>
 
                 <div class="icones">
-                    
                     <a href="https://github.com/mfrodr7gues/DespejoDePoesias">
                         <i class="fa-brands fa-github"></i>
                     </a>
@@ -170,7 +195,6 @@
 
         <hr>
 
-        <!-- Copywhite -->
         <div class="rodape-inferior">
             <p> © 2025 Despejo de Poesias - Todos os direitos reservados. </p>
         </div>

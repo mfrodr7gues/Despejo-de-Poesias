@@ -137,7 +137,6 @@
     color: var(--primary-color-ebony);
     font-size: 20px;
     font-weight: 600;
-    margin-top: 10px;
 }
 
 /* MAIS POPULARES */
@@ -157,6 +156,7 @@
     display: flex;
     gap: 15px;
     padding: 15px 0;
+    margin-bottom: 10px;
     border-bottom: solid 2px var(--primary-color-ebony);
     color: var(--text-color-mochaearth);
 }
@@ -297,6 +297,7 @@
 .datePoesias {
     display: flex;
     gap: 6px;
+    margin-top: 10px;
     font-size: 12px;
     color: var(--primary-color-ebony);
 }
@@ -406,22 +407,96 @@
     grid-column: 2; /* Coluna da direita */
 }
 
-/* Esconde conteúdo normal quando mostra estado vazio */
-.onHipe:has(.estado-vazio) img,
-.onHipe:has(.estado-vazio) .infoBar,
-.onHipe:has(.estado-vazio) h3:not(.estado-vazio h3) {
-    display: none;
-}
-
-.mostPopulars:has(.estado-vazio) .miniArticles-super {
-    display: none;
-}
-
-.articles:has(.estado-vazio) .poesias {
-    display: none;
-}
-
 .articles {
     grid-column: 1 / -1; /* Ocupa ambas as colunas */
     width: 100%;
+}
+
+/* Injeção do JS */
+
+.destaque-card {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.destaque-img-wrapper img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.destaque-categoria {
+    font-size: 14px;
+    font-weight: 600;
+    opacity: .8;
+}
+
+.destaque-titulo {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.destaque-assunto {
+    font-size: 15px;
+    opacity: .9;
+}
+
+.destaque-data-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    opacity: .8;
+    margin-top: 8px;
+}
+
+.poesias-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.poesia-card {
+    background: var(--background-color-vanillacream);
+    border-radius: 12px;
+    overflow: hidden;
+    padding-bottom: 15px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.poesia-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-bottom: 1px solid #eee;
+}
+
+.poesia-card h3 {
+    font-size: 1.1rem;
+    margin: 10px 15px 5px;
+}
+
+.poesia-card span {
+    margin: 10px 15px 5px;
+    display: block;
+    font-size: 0.85rem;
+    color: #666;
+}
+
+.poesia-card p {
+    margin: 0 15px;
+    font-size: 0.9rem;
+    color: #444;
+}
+
+.poesia-card .data {
+    margin: 10px 15px 0;
+    font-size: 0.85rem;
+    color: #555;
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
