@@ -1,4 +1,5 @@
 .cabecalho {
+    color: var(--text-color-mochaearth);
     padding: 40px 20px;
     text-align: center;
     font-size: 20px;
@@ -11,10 +12,11 @@
 }
 
 .sobre-container {
+    color: var(--text-color-mochaearth);
     display: flex;
     align-items: center;
     gap: 40px;
-    margin: 40px auto;
+    margin: 60px auto;
     justify-content: center;
 }
 
@@ -22,32 +24,33 @@
     max-width: 600px;
 }
 
-.cards {
+.cards, .profile {
     display: flex;
     gap: 25px;
-    margin-bottom: 50px;
     margin-left: 175px;
     color: white;
-    padding: 10px;
+    padding: 15px;
     object-fit: cover;
 }
 
-.cards div {
+.cards div, .profile div {
     background-color: var(--primary-color-ebony);
-    text-align: center;
     border-radius: 12px;
     width: 355px;
     height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
-.cards img {
-    margin-top: 25px;
-    align-items: center;
-    width: 100px;
-    border-radius: 15px;
+.cards div h3, .profile div h2 {
+    margin-bottom: 15px;
 }
 
 .jornada-title {
+    color: var(--text-color-mochaearth);
     text-align: center;
     padding: 20px;
     border-radius: 10px;
@@ -55,34 +58,17 @@
 }
 
 .jornada-content {
+    color: var(--text-color-mochaearth);
     padding: 20px;
     border-radius: 10px;
     max-width: 600px;
     margin: 0 auto 40px auto;
 }
 
-
-.profile {
-    display: grid;
-    grid-template-columns: repeat(3, 500px);
-    gap: 1px;
-    margin-bottom: 50px;
-    margin-left: 175px;
-    color: white;
-    padding: 10px;
-}
-
-.profile div {
-    background-color: var(--primary-color-ebony);
-    text-align: center;
-    border-radius: 12px;
-    width: 310px;
-}
-
-.profile img {
-    align-items: center;
-    width: 100px;
-    border-radius: 15px;
+.profile div img {
+    width: 120px;
+    border-radius: 50%;
+    margin-bottom: 15px;
 }
 
 .contatar {
