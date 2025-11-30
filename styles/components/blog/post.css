@@ -1,0 +1,360 @@
+/* PÁGINA DE DETALHES DO POST */
+.post-body {
+    background-color: var(--background-color-vanillacream);
+    color: var(--primary-color-ebony);
+    line-height: 1.6;
+}
+
+/* BARRA DO TOPO DA PÁGINA */
+.barra {
+    background-color: var(--background-color-vanillacream);
+    padding: 20px 0;
+    border: 2px solid rgba(139, 121, 105, 0.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    margin-top: 20px;
+    border-radius: 12px;
+}
+
+.barra-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    
+}
+
+.button-voltar {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--primary-color-ebony);
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+/* CONTAINER PRINCIPAL */
+.post-main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px 40px;
+}
+
+.post-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 60px;
+    margin-top: 40px;
+}
+
+/* CONTEÚDO PRINCIPAL */
+.post-content {
+    background: var(--background-color-vanillacream);
+}
+
+/* CABEÇALHO DO POST */
+.post-header {
+    margin-bottom: 40px;
+}
+
+.post-category {
+    display: inline-block;
+    background-color: var(--primary-color-ebony);
+    color: var(--background-color-vanillacream);
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+}
+
+.post-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: var(--primary-color-ebony);
+}
+
+.post-meta {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: var(--text-color-mochaearth);
+    font-size: 1rem;
+}
+
+.post-meta fa-regular fa-calendar fa-lg {
+    width: 1rem;
+    height: auto;
+}
+
+.post-author {
+    font-weight: 600;
+    color: var(--primary-color-ebony);
+}
+
+/* IMAGEM DO POST */
+.post-image {
+    margin-bottom: 40px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.post-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+}
+
+/* CORPO DO POST */
+.post-body-content {
+    font-size: 1.125rem;
+}
+
+.poesia-texto {
+    margin-bottom: 40px;
+    padding: 40px;
+    background-color: rgba(245, 227, 193, 0.1);
+    border-radius: 10px;
+    border-left: 4px solid var(--primary-color-ebony);
+}
+
+.estrofe {
+    margin-bottom: 30px;
+    font-size: 1.25rem;
+    line-height: 1.6;
+    color: var(--primary-color-ebony);
+    font-style: italic;
+    text-align: center;
+}
+
+.estrofe:last-child {
+    margin-bottom: 0;
+}
+
+.post-paragraph {
+    margin-bottom: 30px;
+    color: var(--text-color-mochaearth);
+    line-height: 1.7;
+}
+
+.sobre-poesia,
+.analise-poesia {
+    margin-bottom: 50px;
+}
+
+.sobre-poesia h2,
+.analise-poesia h2 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--primary-color-ebony);
+}
+
+.sobre-poesia p,
+.analise-poesia p {
+    margin-bottom: 20px;
+    color: var(--text-color-mochaearth);
+    line-height: 1.7;
+    text-align: justify;
+}
+
+/* SOBRE O AUTOR */
+.sobre-autor {
+    margin: 50px 0;
+    padding: 30px;
+    background-color: var(--background-color-vanillacream);
+    border: 2px solid rgba(139, 121, 105, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.sobre-autor h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: var(--primary-color-ebony);
+}
+
+.autor-info {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 25px;
+    align-items: start;
+}
+
+.autor-fotinha {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid var(--primary-color-ebony);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.autor-fotinha img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.autor-detalhes h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: var(--primary-color-ebony);
+}
+
+.autor-periodo {
+    color: var(--text-color-mochaearth);
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+.autor-bio p {
+    line-height: 1.7;
+    color: var(--text-color-mochaearth);
+    margin-bottom: 0;
+    text-align: justify;
+}
+
+/* ANÁLISE LITERÁRIA */
+.analise-poesia {
+    margin: 50px 0;
+}
+
+.analise-poesia h2 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--primary-color-ebony);
+}
+
+.analise-poesia h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 30px 0 15px;
+    color: var(--primary-color-ebony);
+}
+
+/* COMPARTILHAMENTO */
+.compartilhar {
+    margin-top: 70px;
+    padding: 30px;
+    background-color: rgba(245, 227, 193, 0.05);
+    border-radius: 12px;
+    text-align: center;
+}
+
+.compartilhar h3 {
+    margin-bottom: 20px;
+    color: var(--primary-color-ebony);
+    font-size: 1.3rem;
+}
+
+.compartilhar-botoes {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn-compartilhar {
+    width: 50px;
+    height: 50px;
+    border: 2px solid var(--primary-color-ebony);
+    border-radius: 50%;
+    background: transparent;
+    color: var(--primary-color-ebony);
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-compartilhar:hover {
+    background-color: var(--primary-color-ebony);
+    color: var(--background-color-vanillacream);
+    transform: translateY(-2px);
+}
+
+/* SIDEBAR E POESIAS SEMELHANTES */
+.sidebar {
+    position: sticky;
+    top: 40px;
+}
+
+.poesias-semelhantes {
+    background-color: var(--background-color-vanillacream);
+    padding: 30px 25px;
+    border-radius: 12px;
+    border: 2px solid rgba(139, 121, 105, 0.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.poesias-semelhantes h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--primary-color-ebony);
+    text-align: center;
+}
+
+
+
+.semelhantes-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.poesia-semelhante {
+    padding: 20px;
+    border-radius: 8px;
+    background-color: rgba(245, 227, 193, 0.05);
+    transition: all 0.3s ease;
+    border-left: 3px solid transparent;
+}
+
+.poesia-semelhante:hover {
+    border-left-color: var(--primary-color-ebony);
+    background-color: rgba(245, 227, 193, 0.1);
+    transform: translateX(5px);
+}
+
+.semelhante-categoria {
+    display: inline-block;
+    background-color: var(--primary-color-ebony);
+    color: var(--background-color-vanillacream);
+    padding: 6px 16px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.8px;
+    margin-bottom: 15px;
+}
+
+.poesia-semelhante h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--primary-color-ebony);
+}
+
+.semelhante-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-size: 14px;
+    color: var(--text-color-mochaearth);
+}
+
+.details-meta {
+    display: flex;
+    gap: 8px;
+    font-size: 12px;
+}
