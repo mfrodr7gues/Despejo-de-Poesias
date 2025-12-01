@@ -31,16 +31,6 @@
       "Rank": "3"
     },
     {
-      "id": "c102",
-      "Autor": "Lu & Re",
-      "Title": "O silêncio que cabe dentro de um abraço",
-      "Categoria": "Sentimentos",
-      "URL": "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e",
-      "Assunto": "Reflexão sobre como certos gestos dizem mais do que frases longas — e como o silêncio pode ser uma forma de cura.",
-      "Data": "29/11/2025",
-      "Rank": "3"
-    },
-    {
       "Autor": "Lu & Re",
       "Title": "Noite azul na sacada do quarto",
       "Categoria": "Cotidiano",
@@ -49,6 +39,16 @@
       "Data": "29/11/2025",
       "Rank": "3",
       "id": "c103"
+    },
+    {
+      "Autor": "Fernanda Rodrigues",
+      "Title": "Cartas de amor são ridículas - Fernando Pessoa",
+      "Categoria": "Romance",
+      "URL": "https://lh3.googleusercontent.com/proxy/JM8DZOlCr4yYgKozWp6Njoi5ZUtgXhNUb4kcPxoCpXvGth6_1ohpsIHss43nZ1lO-PEg_yu-wE_wgD5cHZCySOfCERfWP4_zHtn41TZh9fUY2sJkng",
+      "Assunto": "Todas as cartas de amor são Ridículas. Não seriam cartas de amor se não fossem Ridículas.Também escrevi em meu tempo cartas de amor, Como as outras, Ridículas.As cartas de amor, se há amor, Têm de ser Ridículas.Mas, afinal, Só as criaturas que nunca escreveram Cartas de amor É que são Ridículas.Quem me dera no tempo em que escrevia Sem dar por isso Cartas de amor Ridículas.A verdade é que hoje As minhas memórias Dessas cartas de amor É que são Ridículas.(Todas as palavras esdrúxulas, Como os sentimentos esdrúxulos, São naturalmente Ridículas).",
+      "Data": "30/11/2025",
+      "Rank": "1",
+      "id": "21b7"
     }
   ]
 }

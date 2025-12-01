@@ -19,7 +19,6 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-    
 }
 
 .button-voltar {
@@ -83,16 +82,41 @@
     gap: 20px;
     color: var(--text-color-mochaearth);
     font-size: 1rem;
+    flex-wrap: wrap;
 }
 
-.post-meta fa-regular fa-calendar fa-lg {
+.post-meta i {
+    font-size: 1rem;
     width: 1rem;
-    height: auto;
+    height: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.post-meta-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 .post-author {
-    font-weight: 600;
-    color: var(--primary-color-ebony);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.post-date {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.post-admin {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 10px;
 }
 
 /* IMAGEM DO POST */
@@ -302,8 +326,6 @@
     color: var(--primary-color-ebony);
     text-align: center;
 }
-
-
 
 .semelhantes-grid {
     display: flex;
