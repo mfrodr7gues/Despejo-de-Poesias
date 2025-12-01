@@ -27,10 +27,11 @@
 .cards, .profile {
     display: flex;
     gap: 25px;
-    margin-left: 175px;
     color: white;
     padding: 15px;
     object-fit: cover;
+    justify-content: center;
+    margin-top: 50px;
 }
 
 .cards div, .profile div {
@@ -54,7 +55,7 @@
     text-align: center;
     padding: 20px;
     border-radius: 10px;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .jornada-content {
@@ -78,8 +79,8 @@
     padding: 10px 20px;
     font-size: 1rem;
     border-radius: 5px;
-    cursor: pointer;
     transition: background-color 0.3s ease;
+    margin-top: 50px;
 }
 
 .contatar div button {
