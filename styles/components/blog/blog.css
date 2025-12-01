@@ -110,6 +110,7 @@
     max-width: 100%;
     height: auto;
     border-radius: 10px;
+    object-fit: cover;
 }
 
 .infoBar {
@@ -171,6 +172,7 @@
     border-radius: 10px;
     object-fit: cover;
     flex-shrink: 0;
+    object-fit: cover;
 }
 
 .MAContent {
@@ -274,6 +276,7 @@
     object-fit: cover;
     border-radius: 5px;
     margin-bottom: 10px;
+    object-fit: cover;
 }
 
 .PContent {
@@ -499,4 +502,25 @@
     display: flex;
     align-items: center;
     gap: 5px;
+}
+
+/*°。°。°。°。°。°。。°。°。°。°。°°。°。°。°。°。°。。°。°。°。°。°°。°。°。°°。°。°。°。。°。°。°。°。°°。°。°。°。°。°°。°。°。°。°。°。。°。°。°。°*/
+
+/* Responsividade - TABLET */
+@media (max-width: 768px) {
+    /* Estado preenchido*/
+    .mostPopulars {
+        width: 100%;
+        grid-column: 2;
+        margin-right: 42px;
+    }
+
+    /* Estado vazio */
+
+    /* Já está feito!*/
+}
+
+/* Responsividade - MOBILE */
+@media (max-width: 400px) {
+
 }

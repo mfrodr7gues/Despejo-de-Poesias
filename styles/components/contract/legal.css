@@ -1,6 +1,6 @@
 .pagina-texto {
     background: var(--background-color-vanillacream);
-    color: var(--text-color-mochaearth);
+    color: var(--primary-color-ebony);
     font-family: 'Inter', sans-serif;
     line-height: 1.65;
     padding: 40px 20px;
@@ -15,14 +15,14 @@
 .conteudo-pagina h1 {
     font-size: 1.9rem;
     margin-bottom: 8px;
-    color: var(--text-color-mochaearth);
+    color: var(--primary-color-ebony);
 }
 
 .conteudo-pagina h2 {
     font-size: 1.2rem;
     margin-top: 26px;
     margin-bottom: 10px;
-    color: var(--text-color-mochaearth);
+    color: var(--primary-color-ebony);
 }
 
 .conteudo-pagina p {
