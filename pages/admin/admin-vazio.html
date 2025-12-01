@@ -94,7 +94,7 @@
 
           <div class="input-group">
             <label for="assunto"> Escrita </label>
-            <input type="text" id="assunto" placeholder="Escreva a poesia aqui..." required />
+            <textarea id="assunto"></textarea>
           </div>
 
           <div class="input-group">
@@ -112,7 +112,17 @@
         </form>
       </div>
     </div>
+    <div style="display: none;" id="esconde"></div>
         
     <script src="../../scripts/admin.js"></script>
+    <script src="../../node_modules/ckeditor4/ckeditor.js"></script>
+    <script>
+      let editor = CKEDITOR.replace( 'assunto' );
+      
+      editor.on( 'change', function(evt) {
+        var data = evt.editor.getData();
+        document.getElementById("esconde").innerHTML = data;
+      }) 
+    </script>
 </body>
 </html>
