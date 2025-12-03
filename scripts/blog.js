@@ -48,6 +48,11 @@ function preencherDestaque(post) {
     document.querySelector(".destaque-assunto").textContent = post.Assunto;
     document.querySelector(".destaque-data").textContent = post.Data;
 
+    // ⭐ ADICIONAR NAVEGAÇÃO PARA O POST
+    card.onclick = () => {
+        window.location.href = `/pages/blog/post.html?id=${post.id}`;
+    };
+
     vazio.style.display = "none";
     card.style.display = "flex";
 }
@@ -88,6 +93,11 @@ function preencherPopulares(posts) {
                 </div>
             </div>
         `;
+
+        // ⭐ NAVEGAR PARA O POST
+        div.onclick = () => {
+            window.location.href = `/pages/blog/post.html?id=${post.id}`;
+        };
 
         container.appendChild(div);
     });
@@ -130,6 +140,11 @@ function preencherComuns(posts) {
                 </div>
             </div>
         `;
+
+        // ⭐ NAVEGAR PARA O POST
+        card.onclick = () => {
+            window.location.href = `/pages/blog/post.html?id=${post.id}`;
+        };
 
         container.appendChild(card);
     });

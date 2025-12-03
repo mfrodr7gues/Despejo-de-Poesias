@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Post</title>
+    <link rel="stylesheet" href="post.css">
+</head>
+<body>
+
+    <h1 id="post-title"></h1>
+
+<img id="post-img" src="" alt="" width="300">
+
+<p><strong>Autor:</strong> <span id="post-author"></span></p>
+<p><strong>Categoria:</strong> <span id="post-category"></span></p>
+<p><strong>Data:</strong> <span id="post-date"></span></p>
+
+<p id="post-content"></p>
+
+
+    <script>
+  // 1. Pega o ID da URL: post-vazio.html?id=ca63
+  const params = new URLSearchParams(window.location.search);
+  const postId = params.get("id");
+
+  // 2. Busca o post no servidor usando o ID
+  fetch(`http://localhost:3000/posts/${postId}`)
+    .then(res => res.json())
+    .then(post => {
+
+      // 3. Preenche a página com os dados do post
+      document.getElementById("post-title").textContent = post.Title;
+      document.getElementById("post-img").src = post.URL;
+      document.getElementById("post-img").alt = post.Title;
+      document.getElementById("post-author").textContent = post.Autor;
+      document.getElementById("post-category").textContent = post.Categoria;
+      document.getElementById("post-date").textContent = post.Data;
+      document.getElementById("post-content").textContent = post.Assunto;
+    })
+    .catch(err => {
+      console.error(err);
+      alert("Post não encontrado!");
+    });
+</script>
+
+    <script src="../../scripts/post.js"></script>
+</body>
+</html>
