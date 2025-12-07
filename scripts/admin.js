@@ -21,6 +21,23 @@ btnFechar.addEventListener("click", () => {
   editId = null;
 });
 
+//Coisa
+document.addEventListener("DOMContentLoaded", () => {
+  CKEDITOR.replace("assunto");
+
+  const editor = CKEDITOR.instances.assunto;
+
+  editor.on("instanceReady", function () {
+    editor.setData(assunto.value);
+  });
+
+  editor.on( 'change', function(evt) {
+        var data = evt.editor.getData();
+        document.getElementById("esconde").innerHTML = data;
+  });
+});
+
+
 const empty = document.getElementById("nenhum-post");
 const postGrid = document.getElementById("postGrid");
 
@@ -81,6 +98,8 @@ async function listarPosts(filtro = "") {
         assunto.value = p.Assunto;
         editId = p.id ?? p._id ?? null;
         modalOverlay.classList.add("active");
+
+        CKEDITOR.instances.assunto.setData(assunto.value);
       };
 
       deleteBtn.onclick = async () => {
@@ -105,6 +124,7 @@ const autName = document.getElementById("AutorName");
 const postTitle = document.getElementById("titulo");
 const postCate = document.getElementById("categoria");
 const URLimg = document.getElementById("URLimg");
+const AboutPoesy = document.getElementById("AboutPoesy");
 const assunto = document.getElementById("esconde");
 const rank = document.getElementById("rank");
 
@@ -117,7 +137,8 @@ formUsuario.onsubmit = async (e) => {
     URL: URLimg.value.trim(),
     Assunto: assunto.innerHTML,
     Data: new Date().toLocaleDateString("pt-BR"),
-    Rank: rank.value.trim()
+    Rank: rank.value.trim(),
+    Sobre: AboutPoesy.value.trim()
   };
 
 

@@ -72,6 +72,13 @@
         </div>
         
         <form id="formUsuario" class="modal-form">
+          <div class="escrita-separada">
+            <div class="input-group">
+              <label for="assunto"> Escrita </label>
+              <textarea id="assunto"></textarea>
+            </div>
+          </div>
+
           <div class="input-group">
             <label for="nome"> Nome do autor </label>
             <input type="text" id="AutorName" placeholder="Digite o nome do autor da publicação" required />
@@ -91,12 +98,10 @@
             <label for="URL imagem"> URL da capa </label>
             <input type="text" id="URLimg" placeholder="Insira a URL da imagem" required />
           </div>
-
           <div class="input-group">
-            <label for="assunto"> Escrita </label>
-            <textarea id="assunto"></textarea>
+            <label for="Sobre Poesia"> Sobre a Poesia </label>
+            <input type="text" id="AboutPoesy" placeholder="Insira as informações" required />
           </div>
-
           <div class="input-group">
             <label for="rank"> Rank da poesia </label>
             <select id="rank" name="postRank" class="rank" required>
@@ -116,13 +121,5 @@
         
     <script src="../../scripts/admin.js"></script>
     <script src="../../node_modules/ckeditor4/ckeditor.js"></script>
-    <script>
-      let editor = CKEDITOR.replace( 'assunto' );
-      
-      editor.on( 'change', function(evt) {
-        var data = evt.editor.getData();
-        document.getElementById("esconde").innerHTML = data;
-      }) 
-    </script>
 </body>
 </html>

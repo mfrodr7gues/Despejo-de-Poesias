@@ -365,6 +365,17 @@
   border-radius: 7px;
 }
 
+.escrita-separada {
+    position: absolute;
+    margin-left: 510px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 16px;
+    transition: 0.5s;
+    animation: slideUp 0.4s ease;
+    animation: fadeIn 0.4s ease;
+}
+
 /* Animações */
 @keyframes fadeIn {
   from {
