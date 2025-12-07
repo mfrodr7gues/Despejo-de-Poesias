@@ -43,9 +43,8 @@ function preencherDestaque(post) {
     }
 
     document.querySelector(".destaque-img").src = post.URL;
-    document.querySelector(".destaque-categoria").textContent = post.Categoria;
+    document.querySelector(".destaque-categoria").textContent = post.Categoria.toUpperCase();
     document.querySelector(".destaque-titulo").textContent = post.Title;
-    document.querySelector(".destaque-assunto").textContent = post.Assunto;
     document.querySelector(".destaque-data").textContent = post.Data;
 
     // ⭐ ADICIONAR NAVEGAÇÃO PARA O POST
@@ -85,7 +84,7 @@ function preencherPopulares(posts) {
         div.innerHTML = `
             <img src="${post.URL}" alt="">
             <div class="MAContent">
-                <div class="MACategory">${post.Categoria}</div>
+                <div class="MACategory">${post.Categoria.toUpperCase()}</div>
                 <div class="MATitle">${post.Title}</div>
                 <div class="dateMArticles">
                     <i class="fa-regular fa-clock"></i>
@@ -131,9 +130,8 @@ function preencherComuns(posts) {
         card.innerHTML = `
             <img src="${post.URL}" alt="">
             <div class="PContent">
-                <div class="PCategory">${post.Categoria}</div>
+                <div class="PCategory">${post.Categoria.toUpperCase()}</div>
                 <div class="PTitle">${post.Title}</div>
-                <p>${post.Assunto}</p>
                 <div class="datePoesias">
                     <i class="fa-regular fa-clock"></i>
                     <span>${post.Data}</span>
