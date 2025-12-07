@@ -50,7 +50,7 @@ function preencherDestaque(post) {
 
     // ⭐ ADICIONAR NAVEGAÇÃO PARA O POST
     card.onclick = () => {
-        window.location.href = `/pages/blog/post.html?id=${post.id}`;
+        window.location.href = `/pages/blog/post-vazio.html?id=${post.id}`;
     };
 
     vazio.style.display = "none";
@@ -96,7 +96,7 @@ function preencherPopulares(posts) {
 
         // ⭐ NAVEGAR PARA O POST
         div.onclick = () => {
-            window.location.href = `/pages/blog/post.html?id=${post.id}`;
+            window.location.href = `/pages/blog/post-vazio.html?id=${post.id}`;
         };
 
         container.appendChild(div);
@@ -143,7 +143,7 @@ function preencherComuns(posts) {
 
         // ⭐ NAVEGAR PARA O POST
         card.onclick = () => {
-            window.location.href = `/pages/blog/post.html?id=${post.id}`;
+            window.location.href = `/pages/blog/post-vazio.html?id=${post.id}`;
         };
 
         container.appendChild(card);

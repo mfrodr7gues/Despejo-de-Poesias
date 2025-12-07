@@ -9,10 +9,11 @@ fetch(`http://localhost:3000/posts/${id}`)
         
         // preencher os elementos da página
         document.getElementById("post-img").src = post.URL;
-        document.getElementById("post-title").textContent = post.Title;
-        document.getElementById("post-author").textContent = "Autor: " + post.Author;
-        document.getElementById("post-date").textContent = "Publicado em: " + post.Date;
-        document.getElementById("post-content").textContent = post.Content;
+        document.getElementById("post-category").innerText = post.Categoria;
+        document.getElementById("post-title").innerHTML = post.Title;
+        document.getElementById("post-author").innerHTML = post.Autor;
+        document.getElementById("post-date").innerHTML = "Publicado em: " + post.Data;
+        document.getElementById("estrofe").innerHTML = post.Assunto;
         
     })
     .catch(err => {
