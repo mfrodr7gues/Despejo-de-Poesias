@@ -124,6 +124,7 @@ const autName = document.getElementById("AutorName");
 const postTitle = document.getElementById("titulo");
 const postCate = document.getElementById("categoria");
 const URLimg = document.getElementById("URLimg");
+const AboutPoesy = document.getElementById("AboutPoesy");
 const assunto = document.getElementById("esconde");
 const rank = document.getElementById("rank");
 
@@ -136,7 +137,8 @@ formUsuario.onsubmit = async (e) => {
     URL: URLimg.value.trim(),
     Assunto: assunto.innerHTML,
     Data: new Date().toLocaleDateString("pt-BR"),
-    Rank: rank.value.trim()
+    Rank: rank.value.trim(),
+    Sobre: AboutPoesy.value.trim()
   };
 
 
