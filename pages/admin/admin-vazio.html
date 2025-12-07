@@ -117,13 +117,5 @@
         
     <script src="../../scripts/admin.js"></script>
     <script src="../../node_modules/ckeditor4/ckeditor.js"></script>
-    <script>
-      let editor = CKEDITOR.replace( 'assunto' );
-      
-      editor.on( 'change', function(evt) {
-        var data = evt.editor.getData();
-        document.getElementById("esconde").innerHTML = data;
-      }) 
-    </script>
 </body>
 </html>

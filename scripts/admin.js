@@ -21,6 +21,23 @@ btnFechar.addEventListener("click", () => {
   editId = null;
 });
 
+//Coisa
+document.addEventListener("DOMContentLoaded", () => {
+  CKEDITOR.replace("assunto");
+
+  const editor = CKEDITOR.instances.assunto;
+
+  editor.on("instanceReady", function () {
+    editor.setData(assunto.value);
+  });
+
+  editor.on( 'change', function(evt) {
+        var data = evt.editor.getData();
+        document.getElementById("esconde").innerHTML = data;
+  });
+});
+
+
 const empty = document.getElementById("nenhum-post");
 const postGrid = document.getElementById("postGrid");
 
@@ -81,6 +98,8 @@ async function listarPosts(filtro = "") {
         assunto.value = p.Assunto;
         editId = p.id ?? p._id ?? null;
         modalOverlay.classList.add("active");
+
+        CKEDITOR.instances.assunto.setData(assunto.value);
       };
 
       deleteBtn.onclick = async () => {
