@@ -141,7 +141,6 @@ formUsuario.onsubmit = async (e) => {
     Sobre: AboutPoesy.value.trim()
   };
 
-
   try {
     if (editId) {
       await fetch(`${API_URL}/${editId}`, {
