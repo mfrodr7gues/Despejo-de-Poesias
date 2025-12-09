@@ -21,7 +21,7 @@ btnFechar.addEventListener("click", () => {
   editId = null;
 });
 
-//Coisa
+// Coisa
 document.addEventListener("DOMContentLoaded", () => {
   CKEDITOR.replace("assunto");
 

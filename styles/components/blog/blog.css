@@ -20,20 +20,32 @@
 }
 
 .citacao-super {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    position: relative;
+    margin: 30px 0;
+    max-width: 800px; 
 }
 
 .citacao {
     font-size: 18px;
     font-style: italic;
-    margin: 30px 0;
-    padding-left: 8px; 
-    padding-right: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
     color: var(--color-allstar-encardido);
     border-left: 3px solid var(--color-allstar-encardido);
-    text-align: left;
+    text-align: justify;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.autoria {
+    display: block; 
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--color-allstar-encardido);
+    text-align: right;
+    margin-top: 13px; 
+    margin-right: 15px; 
+    font-style: normal;
 }
 
 .expo h2 {
@@ -48,7 +60,6 @@
     line-height: 1.6;
     color: var(--color-allstar-encardido);
 }
-
 
 .buttons-blog {
     display: flex;
@@ -78,8 +89,6 @@
     color: var(--primary-color-ebony);
     transform: translateY(-2px);
 }
-
-
 
 /* Estado preenchido */
 
@@ -305,8 +314,6 @@
     color: var(--primary-color-ebony);
 }
 
-
-
 /* Estado vazio */
 .estado-vazio {
     text-align: center;
@@ -399,24 +406,22 @@
     align-items: start; 
 }
 
-/* Garante que as seções ocupem o espaço do grid */
 .onHipe {
     width: 100%;
-    grid-column: 1; /* Coluna da esquerda */
+    grid-column: 1; 
 }
 
 .mostPopulars {
     width: 100%;
-    grid-column: 2; /* Coluna da direita */
+    grid-column: 2;
 }
 
 .articles {
-    grid-column: 1 / -1; /* Ocupa ambas as colunas */
+    grid-column: 1 / -1;
     width: 100%;
 }
 
 /* Injeção do JS */
-
 .destaque-card {
     display: flex;
     flex-direction: column;

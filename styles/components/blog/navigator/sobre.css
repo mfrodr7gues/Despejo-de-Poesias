@@ -1,97 +1,176 @@
-.cabecalho {
-    color: var(--text-color-mochaearth);
-    padding: 40px 20px;
-    text-align: center;
-    font-size: 20px;
-}
-
-.imagem-sobre {
-    width: 500px;
-    height: auto;
-    border-radius: 10px;
-}
-
-.sobre-container {
-    color: var(--text-color-mochaearth);
-    display: flex;
-    align-items: center;
-    gap: 40px;
-    margin: 60px auto;
-    justify-content: center;
-}
-
-.texto-container {
-    max-width: 600px;
-}
-
-.cards, .profile {
-    display: flex;
-    gap: 25px;
-    color: white;
-    padding: 15px;
-    object-fit: cover;
-    justify-content: center;
-    margin-top: 50px;
-}
-
-.cards div, .profile div {
-    background-color: var(--primary-color-ebony);
-    border-radius: 12px;
-    width: 355px;
-    height: 250px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.cards div h3, .profile div h2 {
-    margin-bottom: 15px;
-}
-
-.jornada-title {
-    color: var(--text-color-mochaearth);
-    text-align: center;
+.main-sobre {
+    max-width: 1150px;
+    margin: 0 auto;
     padding: 20px;
-    border-radius: 10px;
-    margin-top: 40px;
+}
+
+.barra-sobre {
+    background-color: var(--background-color-vanillacream);
+    border: 2px solid rgba(139, 121, 105, 0.10);
+    border-radius: 12px;
+    padding: 18px 0;
+    margin-top: 25px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.04);
+}
+
+.button-voltar {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--primary-color-ebony);
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.cabecalho {
+    text-align: center;
+    margin: 60px 0 30px;
+}
+
+.cabecalho h1 {
+    font-size: 36px;
+    font-weight: 800;
+    color: var(--primary-color-ebony);
+}
+
+.cabecalho p {
+    margin-top: 10px;
+    font-size: 20px;
+    color: var(--text-color-mochaearth);
+}
+
+main section h3,
+main section h2 {
+    color: var(--primary-color-ebony);
+    font-size: 24px;
+}
+
+main section p {
+    color: var(--text-color-mochaearth);
+    line-height: 1.65;
+    margin-bottom: 15px;
+    margin-top: 15px;
 }
 
 .jornada-content {
-    color: var(--text-color-mochaearth);
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 600px;
-    margin: 0 auto 40px auto;
+    max-width: 900px;
+    margin: 15px auto 50px auto;
+    padding: 28px 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.06);
 }
 
-.profile div img {
-    width: 120px;
+.jornada-title {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.jornada-title h2 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.profile {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 35px;
+    margin: 50px auto;
+    max-width: 900px;
+}
+
+.profile .card {
+    background-color: var(--background-color-vanillacream);
+    border: 1.8px solid rgba(139,121,105,0.25);
+    border-radius: 14px;
+    padding: 35px 20px;
+    text-align: center;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+}
+
+.profile .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 24px rgba(0,0,0,0.12);
+}
+
+.profile .card img {
+    width: 115px;
+    height: 115px;
+    object-fit: cover;
     border-radius: 50%;
-    margin-bottom: 15px;
+    border: 3px solid var(--primary-color-ebony);
+    margin-bottom: 18px;
+}
+
+.profile .card h2 {
+    font-size: 1.20rem;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.links-perfil {
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+}
+
+.links-perfil a {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 1.25rem;
+    color: var(--primary-color-ebony);
+    transition: 0.25s ease;
+    text-decoration: none; 
+    background-color: transparent;
+}
+
+.links-perfil a:hover {
+    color: var(--background-color-vanillacream);
+    transform: translateY(-2px);
+    background-color: var(--primary-color-ebony);
 }
 
 .contatar {
     text-align: center;
-    color: var(--text-color-mochaearth);
-    border: none;
-    padding: 10px 20px;
-    font-size: 1rem;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-    margin-top: 50px;
+    margin: 80px auto;
 }
 
-.contatar div button {
+.contatar h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.contatar p {
+    margin-top: 8px;
+    color: var(--text-color-mochaearth);
+    font-size: 1.1rem;
+}
+
+.contatar .botao-contato {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 24px;
+    border: 2px solid var(--primary-color-ebony);
+    color: var(--primary-color-ebony);
+    background-color: transparent;
+    font-weight: 600;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 1.05rem;
+    cursor: pointer;
+    margin-top: 25px;
+}
+
+.contatar .botao-contato:hover {
     background-color: var(--primary-color-ebony);
     color: var(--background-color-vanillacream);
-    border: none;
-    padding: 10px 20px;
-    font-size: 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-top: 20px;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
-

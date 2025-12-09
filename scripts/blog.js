@@ -47,7 +47,6 @@ function preencherDestaque(post) {
     document.querySelector(".destaque-titulo").textContent = post.Title;
     document.querySelector(".destaque-data").textContent = post.Data;
 
-    // ⭐ ADICIONAR NAVEGAÇÃO PARA O POST
     card.onclick = () => {
         window.location.href = `/pages/blog/post.html?id=${post.id}`;
     };
@@ -93,7 +92,6 @@ function preencherPopulares(posts) {
             </div>
         `;
 
-        // ⭐ NAVEGAR PARA O POST
         div.onclick = () => {
             window.location.href = `/pages/blog/post.html?id=${post.id}`;
         };
@@ -139,7 +137,6 @@ function preencherComuns(posts) {
             </div>
         `;
 
-        // ⭐ NAVEGAR PARA O POST
         card.onclick = () => {
             window.location.href = `/pages/blog/post.html?id=${post.id}`;
         };
