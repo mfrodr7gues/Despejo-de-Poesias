@@ -15,7 +15,7 @@ fetch(`http://localhost:3000/posts/${id}`)
         carregarRecomendados(post);
     })
     .catch(err => {
-        document.body.innerHTML = "<h1> Post não encontrado 😭 </h1>";
+        document.body.innerHTML = "<h1> Post não encontrado :/ </h1>";
     });
 
 function carregarRecomendados(post) {
