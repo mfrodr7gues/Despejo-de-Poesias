@@ -1,17 +1,12 @@
-1. PARTE VISUAL
-
-2. ESTRUTURA DE PASTAS
-
-2. POR DENTRO DO VS CODE
-
 USAMOS A API PARA CONECTAR O SISTEMA COM UM "FALSO BANCO DE DADOS" DO TIPO JSON, QUE É O FORMATO RECEBIDO DE RESPOSTA DAS CHAMADAS HTTP
 
-TODO TIPO DE CHAMADA HTTP
+---------------------------------------------------------------------------------------------------------------------------------------
 
-TANTO A API QUANTO AS CHAMADAS HTTP
+* Organizar mais o sobre
+* Criar a funcionalidade de buscar por poesias
+* Ajustes na estilização
+* Linkagens 
+* Responsividade
+* Hospedagem 
 
-------------------------------------------------------------------------------------------
-
-FUNCIONA COMO FILTRO
-
-COLETA O RANKING E SUBRESCREVE UM HTML PRÉ-DEFININDO
+* Organizar todas as páginas e arquivos e fazer uma manutenção nos códigos

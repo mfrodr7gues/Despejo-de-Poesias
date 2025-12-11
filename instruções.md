@@ -1,6 +1,6 @@
 # Rodar os seguintes comandos no terminal assim que abrir:
 
-### Apenas da primeira vez que abrir:
+### Apenas na primeira vez que abrir:
 ```
     npm install json-server
 ```
@@ -12,7 +12,7 @@
 
 ***
 
-### Antes de começar a programar( rode no terminal com *Ctrl + "* ):
+### Antes de começar a programar (rode no terminal com *Ctrl + "* ):
 
 ```
     git checkout main
@@ -24,7 +24,7 @@
 
 ***
 
-### Depois de finalizar suas alterações rode no terminal:
+### Depois de finalizar suas alterações, rode no terminal:
 ```
     git add .
     git commit -m "(Aqui a sua mensagem sem os parenteses)"
@@ -36,4 +36,4 @@
 
 ```
 
-### apenas isso por hoje.
+### Apenas isso.
