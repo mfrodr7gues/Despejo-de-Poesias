@@ -2,7 +2,7 @@ USAMOS A API PARA CONECTAR O SISTEMA COM UM "FALSO BANCO DE DADOS" DO TIPO JSON,
 
 ---------------------------------------------------------------------------------------------------------------------------------------
 
-* Organizar mais o sobre
+* Organizar mais o sobre (tecnologiasusadas, fotinha)
 * Criar a funcionalidade de buscar por poesias
 * Ajustes na estilização
 * Linkagens 
@@ -10,3 +10,6 @@ USAMOS A API PARA CONECTAR O SISTEMA COM UM "FALSO BANCO DE DADOS" DO TIPO JSON,
 * Hospedagem 
 
 * Organizar todas as páginas e arquivos e fazer uma manutenção nos códigos
+
+! Engenharia reversa
+! Repositório do projeto
