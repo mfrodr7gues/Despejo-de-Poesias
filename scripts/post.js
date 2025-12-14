@@ -25,8 +25,7 @@ function carregarRecomendados(post) {
             const categoria = post.Categoria;
 
             const semelhantes = posts.filter(p =>
-                p.Categoria.toLowerCase() === categoria.toLowerCase() &&
-                p.id !== post.id
+                p.Categoria.toLowerCase() === categoria.toLowerCase() && p.id !== post.id
             );
 
             const recomendados = semelhantes.slice(0, 3);
@@ -36,6 +35,7 @@ function carregarRecomendados(post) {
 
             if (recomendados.length === 0) {
                 grid.innerHTML = `<p>Nenhuma poesia semelhante encontrada.</p>`;
+                grid.style.marginLeft = "30px";
                 return;
             }
 

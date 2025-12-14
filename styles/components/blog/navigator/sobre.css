@@ -37,7 +37,8 @@
 .cabecalho p {
     margin-top: 10px;
     font-size: 20px;
-    color: var(--text-color-mochaearth);
+    color: var(--primary-color-ebony);
+    font-weight: 500;
 }
 
 main section h3,
@@ -55,10 +56,11 @@ main section p {
 
 .jornada-content {
     max-width: 900px;
-    margin: 15px auto 50px auto;
+    margin: 15px auto 80px auto;
     padding: 28px 30px;
     border-radius: 12px;
-    box-shadow: 0 6px 14px rgba(0,0,0,0.06);
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.10);
+    margin-top: 2rem;
 }
 
 .jornada-title {
@@ -81,7 +83,7 @@ main section p {
 
 .profile .card {
     background-color: var(--background-color-vanillacream);
-    border: 1.8px solid rgba(139,121,105,0.25);
+    border: 2px solid rgba(139,121,105,0.25);
     border-radius: 14px;
     padding: 35px 20px;
     text-align: center;
@@ -91,7 +93,7 @@ main section p {
 
 .profile .card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 10px 24px rgba(0,0,0,0.12);
+    box-shadow: 0 10px 24px rgba(0,0,0,0.20);
 }
 
 .profile .card img {
@@ -111,13 +113,13 @@ main section p {
 
 .links-perfil {
     display: flex;
-    gap: 6px;
+    gap: 3px;
     justify-content: center;
 }
 
 .links-perfil a {
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -131,7 +133,7 @@ main section p {
 
 .links-perfil a:hover {
     color: var(--background-color-vanillacream);
-    transform: translateY(-2px);
+    transform: translateY(-3px);
     background-color: var(--primary-color-ebony);
 }
 
@@ -146,9 +148,12 @@ main section p {
 }
 
 .contatar p {
-    margin-top: 8px;
     color: var(--text-color-mochaearth);
-    font-size: 1.1rem;
+    font-size: 18px;
+}
+
+.mensagem-sobre {
+    margin-top: 1rem;
 }
 
 .contatar .botao-contato {

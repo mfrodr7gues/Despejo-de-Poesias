@@ -118,3 +118,30 @@ input[type="checkbox"]:checked::after {
     transform: scale(1.1);
     transition: 0.2s;
 }
+
+.feedback-form {
+  margin-top: 14px;
+  padding: 12px 16px;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  opacity: 0;
+  transform: translateY(-5px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.feedback-form.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.feedback-form.erro {
+  background: var(--background-color-vanillacream);
+  color: #5c2121;
+  border-left: 4px solid #5c2121;
+}
+
+.feedback-form.sucesso {
+  background: var(--background-color-vanillacream);
+  color: var(--primary-color-ebony);
+  border-left: 4px solid var(--primary-color-ebony);
+}

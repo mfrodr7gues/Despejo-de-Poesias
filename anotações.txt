@@ -5,6 +5,7 @@ USAMOS A API PARA CONECTAR O SISTEMA COM UM "FALSO BANCO DE DADOS" DO TIPO JSON,
 * Organizar mais o sobre (tecnologiasusadas, fotinha)
 * Criar a funcionalidade de buscar por poesias
 * Ajustes na estilização
+* Mensagens personalizadas de validação
 * Linkagens 
 * Responsividade
 * Hospedagem 
@@ -13,3 +14,9 @@ USAMOS A API PARA CONECTAR O SISTEMA COM UM "FALSO BANCO DE DADOS" DO TIPO JSON,
 
 ! Engenharia reversa
 ! Repositório do projeto
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+* O conteúdo das poesias não estão aparecendo
+* O JS entortou umas coisas
+* Categoria tem que ficar como "autor da poesia"
