@@ -4,7 +4,12 @@ USAMOS A API PARA CONECTAR O SISTEMA COM UM "FALSO BANCO DE DADOS" DO TIPO JSON,
 
 * Ajustes na estilização
 
-* Responsividade
+* Ajustar a escrita da poesia (Não salva, muito menos aparece)
+
+* Ajustar o tamanho de cada imagem (para o blog, dentro do post e admin)
+
+
+* Responsividade:
 - Blog
 - sobre
 - Contato
@@ -14,8 +19,6 @@ USAMOS A API PARA CONECTAR O SISTEMA COM UM "FALSO BANCO DE DADOS" DO TIPO JSON,
 - Termos de uso
 
 * Hospedagem 
-
-* Organizar todas as páginas e arquivos e fazer uma manutenção nos códigos
 
 ! Engenharia reversa
 ! Repositório do projeto
