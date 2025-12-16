@@ -5,7 +5,6 @@ const nome = document.getElementById("nome");
 const email = document.getElementById("email");
 const mensagem = document.getElementById("mensagem");
 
-// Função para mostrar mensagens bonitas
 function mostrarMensagem(texto, tipo = "erro") {
   feedback.textContent = texto;
   feedback.className = `feedback-form show ${tipo}`;
@@ -13,7 +12,7 @@ function mostrarMensagem(texto, tipo = "erro") {
   if (tipo === "sucesso") {
     setTimeout(() => {
       feedback.classList.remove("show");
-    }, 10000); // 6 segundos
+    }, 10000);
   }
 }
 
@@ -21,7 +20,6 @@ form.addEventListener("submit", async (event) => {
   event.preventDefault();
   feedback.className = "feedback-form";
 
-  // VALIDAÇÕES
   if (!nome.value.trim()) {
     mostrarMensagem("Ops… Tu não digitastes teu nome :/");
     return;
@@ -37,7 +35,6 @@ form.addEventListener("submit", async (event) => {
     return;
   }
 
-  // Assuntos
   const assuntos = [];
   if (document.getElementById("ajuda").checked) assuntos.push("Ajuda");
   if (document.getElementById("sugestao").checked) assuntos.push("Sugestão");
@@ -69,7 +66,6 @@ form.addEventListener("submit", async (event) => {
   }
 });
 
-// Esconde a mensagem ao digitar novamente
 form.addEventListener("input", () => {
   feedback.classList.remove("show");
 });

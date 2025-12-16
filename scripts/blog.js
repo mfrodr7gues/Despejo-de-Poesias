@@ -5,7 +5,7 @@ let poesiasComuns = [];
 
 carregarPosts();
 
-/* Carregar posts */
+/* Carregar posts*/
 async function carregarPosts() {
   try {
     const req = await fetch(API_URL);
@@ -33,7 +33,7 @@ async function carregarPosts() {
   }
 }
 
-/* Barra de pesquica  */
+/* Pesquisar poesias */
 function pesquisarPoesias() {
   const campoBusca = document.getElementById("pesquisa-poesia");
   if (!campoBusca) return;
@@ -47,15 +47,15 @@ function pesquisarPoesias() {
     }
 
     const filtrados = poesiasComuns.filter(post =>
-      post.Title.toLowerCase().includes(termo) ||
-      post.Categoria.toLowerCase().includes(termo)
+      (post.Title || "").toLowerCase().includes(termo) ||
+      (post.NomeAutor || "").toLowerCase().includes(termo)
     );
 
     preencherComuns(filtrados);
   });
 }
 
-/* Poesia em destaque */
+/* Destaque */
 function preencherDestaque(post) {
   const card = document.querySelector(".destaque-card");
   const vazio = document.querySelector(".destaque-vazio");
@@ -68,20 +68,22 @@ function preencherDestaque(post) {
     return;
   }
 
-  document.querySelector(".destaque-img").src = post.URL;
-  document.querySelector(".destaque-categoria").textContent = post.Categoria.toUpperCase();
-  document.querySelector(".destaque-titulo").textContent = post.Title;
-  document.querySelector(".destaque-data").textContent = post.Data;
+  const postId = post.id ?? post._id;
+
+  document.querySelector(".destaque-img").src = post.URL || "";
+  document.querySelector(".destaque-categoria").textContent = (post.NomeAutor || "").toUpperCase();
+  document.querySelector(".destaque-titulo").textContent = post.Title || "";
+  document.querySelector(".destaque-data").textContent = post.Data || "";
 
   card.onclick = () => {
-    window.location.href = `/pages/blog/post.html?id=${post.id}`;
+    window.location.href = `/pages/blog/post.html?id=${postId}`;
   };
 
   vazio.style.display = "none";
   card.style.display = "flex";
 }
 
-/* Poesias populares */
+/* Populares */
 function preencherPopulares(posts) {
   const container = document.querySelector(".miniArticles-super");
   const vazio = document.querySelector(".popular-vazio");
@@ -99,30 +101,32 @@ function preencherPopulares(posts) {
   container.innerHTML = "";
 
   posts.forEach(post => {
+    const postId = post.id ?? post._id;
+
     const div = document.createElement("div");
     div.classList.add("miniArticles");
 
     div.innerHTML = `
-      <img src="${post.URL}" alt="">
+      <img src="${post.URL || ""}" alt="">
       <div class="MAContent">
-        <div class="MACategory">${post.Categoria.toUpperCase()}</div>
-        <div class="MATitle">${post.Title}</div>
+        <div class="MACategory">${(post.NomeAutor || "").toUpperCase()}</div>
+        <div class="MATitle">${post.Title || ""}</div>
         <div class="dateMArticles">
           <i class="fa-regular fa-clock"></i>
-          <span>${post.Data}</span>
+          <span>${post.Data || ""}</span>
         </div>
       </div>
     `;
 
     div.onclick = () => {
-      window.location.href = `/pages/blog/post.html?id=${post.id}`;
+      window.location.href = `/pages/blog/post.html?id=${postId}`;
     };
 
     container.appendChild(div);
   });
 }
 
-/* Poesias comuns */
+/* Comuns */
 function preencherComuns(posts) {
   const container = document.querySelector(".poesias");
   const vazio = document.querySelector(".poesias-vazio");
@@ -142,30 +146,32 @@ function preencherComuns(posts) {
   container.style.display = "grid";
 
   posts.forEach(post => {
+    const postId = post.id ?? post._id;
+
     const card = document.createElement("div");
     card.classList.add("poesia");
 
     card.innerHTML = `
-      <img src="${post.URL}" alt="">
+      <img src="${post.URL || ""}" alt="">
       <div class="PContent">
-        <div class="PCategory">${post.Categoria.toUpperCase()}</div>
-        <div class="PTitle">${post.Title}</div>
+        <div class="PCategory">${(post.NomeAutor || "").toUpperCase()}</div>
+        <div class="PTitle">${post.Title || ""}</div>
         <div class="datePoesias">
           <i class="fa-regular fa-clock"></i>
-          <span>${post.Data}</span>
+          <span>${post.Data || ""}</span>
         </div>
       </div>
     `;
 
     card.onclick = () => {
-      window.location.href = `/pages/blog/post.html?id=${post.id}`;
+      window.location.href = `/pages/blog/post.html?id=${postId}`;
     };
 
     container.appendChild(card);
   });
 }
 
-/* Estado vazio */
+/* Vazios */
 function mostrarEstadoVazio() {
   document.querySelector(".destaque-card")?.style?.setProperty("display", "none");
   document.querySelector(".destaque-vazio")?.style?.setProperty("display", "flex");

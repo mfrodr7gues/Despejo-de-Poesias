@@ -48,9 +48,9 @@ async function listarPosts(filtro = "") {
 
     const q = filtro.trim().toLowerCase();
     const filtrados = posts.filter((p) =>
-      (p.Autor || "").toLowerCase().includes(q) ||
+      (p.Admin || "").toLowerCase().includes(q) ||
       (p.Title || "").toLowerCase().includes(q) ||
-      (p.Categoria || "").toLowerCase().includes(q) ||
+      (p.NomeAutor || "").toLowerCase().includes(q) ||
       (p.Assunto || "").toLowerCase().includes(q)
     );
 
@@ -68,12 +68,12 @@ async function listarPosts(filtro = "") {
       card.innerHTML = `
         ${p.URL ? `<img src="${p.URL}" alt="${p.Title || 'Imagem da Publicação'}">` : ""}
         <h3>${p.Title || "Nome da poesia"}</h3>
-        <p>${p.Categoria || "Nome do autor"}</p>
+        <p>${p.NomeAutor || "Nome do autor"}</p>
         
         <div class="post-details">
           <p class="icon-data-post"><i class="fa-regular fa-calendar fa-lg"></i> ${p.Data || p.date || ""}</p>
           <p class="icon-pontinho-post"> • </p>
-          <p class="icon-autor-post"><i class="fa-solid fa-circle-user"></i> ${p.Autor || ""}</p>
+          <p class="icon-autor-post"><i class="fa-solid fa-circle-user"></i> ${p.Admin || ""}</p>
         </div>
         
         <div class="buttons-post-admin">
@@ -91,9 +91,9 @@ async function listarPosts(filtro = "") {
       const deleteBtn = card.querySelector(".delete");
 
       editBtn.onclick = () => {
-        autName.value = p.Autor || "";
+        AdminName.value = p.Admin || "";
         postTitle.value = p.Title || "";
-        postCate.value = p.Categoria || "";
+        AutorName.value = p.NomeAutor || "";
         URLimg.value = p.URL || "";
         assunto.value = p.Assunto;
         editId = p.id ?? p._id ?? null;
@@ -120,9 +120,9 @@ async function listarPosts(filtro = "") {
   }
 }
 
-const autName = document.getElementById("AutorName");
+const AdminName = document.getElementById("Admin");
 const postTitle = document.getElementById("titulo");
-const postCate = document.getElementById("categoria");
+const AutorName = document.getElementById("AutorName");
 const URLimg = document.getElementById("URLimg");
 const AboutPoesy = document.getElementById("AboutPoesy");
 const assunto = document.getElementById("esconde");
@@ -131,9 +131,9 @@ const rank = document.getElementById("rank");
 formUsuario.onsubmit = async (e) => {
   e.preventDefault();
   const pub = {
-    Autor: autName.value.trim(),
+    Admin: AdminName.value.trim(),
     Title: postTitle.value.trim(),
-    Categoria: postCate.value.trim(),
+    NomeAutor: AutorName.value.trim(),
     URL: URLimg.value.trim(),
     Assunto: assunto.innerHTML,
     Data: new Date().toLocaleDateString("pt-BR"),

@@ -36,6 +36,7 @@
 
 .cabecalho p {
     margin-top: 10px;
+    margin-bottom: 3rem;
     font-size: 20px;
     color: var(--primary-color-ebony);
     font-weight: 500;
@@ -52,6 +53,11 @@ main section p {
     line-height: 1.65;
     margin-bottom: 15px;
     margin-top: 15px;
+    
+}
+
+.texto-idealizando {
+    text-align: justify;
 }
 
 .jornada-content {
