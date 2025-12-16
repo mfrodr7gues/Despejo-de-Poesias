@@ -3,6 +3,7 @@ USAMOS A API PARA CONECTAR O SISTEMA COM UM "FALSO BANCO DE DADOS" DO TIPO JSON,
 ---------------------------------------------------------------------------------------------------------------------------------------
 
 * Ajustes na estilização
+
 * Responsividade
 - Blog
 - sobre
