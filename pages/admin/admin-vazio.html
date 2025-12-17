@@ -27,12 +27,11 @@
                 <p> Bem-vindo, administrador! </p>
             </div>
             
-            <div class="logout-admin">
-                
-                <a href="../login/login.html">
-                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
-                </a>
-            </div>
+          <div class="logout-admin">
+            <a href="#" id="btnLogout">
+              <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            </a>
+          </div>
         </div>
     </header>
 
@@ -80,8 +79,8 @@
           </div>
 
           <div class="input-group">
-            <label for="nome"> Nome do autor </label>
-            <input type="text" id="AutorName" placeholder="Digite o nome do autor da publicação" required />
+            <label for="nome"> Admin </label>
+            <input type="text" id="Admin" placeholder="Digite o nome do admin responsável" required />
           </div>
 
           <div class="input-group">
@@ -90,8 +89,8 @@
           </div>
 
           <div class="input-group">
-            <label for="categoria"> Categoria </label>
-            <input type="text" id="categoria" placeholder="Digite a categoria da poesia" required />
+            <label for="AutorName"> Autor </label>
+            <input type="text" id="AutorName" placeholder="Digite o nome do autor" required />
           </div>
 
           <div class="input-group">
@@ -99,15 +98,15 @@
             <input type="text" id="URLimg" placeholder="Insira a URL da imagem" required />
           </div>
           <div class="input-group">
-            <label for="Sobre Poesia"> Sobre a Poesia </label>
+            <label for="Sobre Poesia"> Sobre a poesia </label>
             <input type="text" id="AboutPoesy" placeholder="Insira as informações" required />
           </div>
           <div class="input-group">
             <label for="rank"> Rank da poesia </label>
             <select id="rank" name="postRank" class="rank" required>
-              <option value="1">Destaque</option>
-              <option value="2">Populares</option>
-              <option value="3">Comum</option>
+              <option value="1"> Destaque </option>
+              <option value="2"> Populares </option>
+              <option value="3"> Comum </option>
             </select>
           </div>
 
@@ -119,7 +118,7 @@
     </div>
     <div style="display: none;" id="esconde"></div>
         
-    <script src="../../scripts/admin.js"></script>
-    <script src="../../node_modules/ckeditor4/ckeditor.js"></script>
+    <script type="module" src="../../scripts/admin.js"></script>
+    <script type="module" src="../../node_modules/ckeditor4/ckeditor.js"></script>
 </body>
 </html>

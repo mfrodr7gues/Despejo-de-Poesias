@@ -6,7 +6,7 @@
 }
 
 /* BARRA DO TOPO DA PÁGINA */
-.barra {
+.barra-post {
     background-color: var(--background-color-vanillacream);
     padding: 20px 0;
     border: 2px solid rgba(139, 121, 105, 0.1);
@@ -45,7 +45,6 @@
     margin-top: 40px;
 }
 
-/* CONTEÚDO PRINCIPAL */
 .post-content {
     background: var(--background-color-vanillacream);
 }

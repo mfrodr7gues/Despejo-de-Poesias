@@ -50,7 +50,8 @@
     margin-bottom: 8px;
 }
 
-.coluna ul li a {
+.coluna ul li a,
+.nosso-repositorio {
     color: var(--background-color-vanillacream);
     text-decoration: none;
     font-size: 16px;
@@ -59,7 +60,8 @@
     position: relative; 
 }
 
-.coluna ul li a::after {
+.coluna ul li a::after,
+.nosso-repositorio::after {
     content: "";
     position: absolute;
     left: 0;
@@ -71,11 +73,13 @@
     opacity: 0.2;
 }
 
-.coluna ul li a:hover {
+.coluna ul li a:hover,
+.nosso-repositorio:hover {
     color: var(--background-color-vanillacream);
 }
 
-.coluna ul li a:hover::after {
+.coluna ul li a:hover::after,
+.nosso-repositorio:hover::after {
     width: 100%;
 }
 
@@ -83,8 +87,7 @@
     margin-top: 15px;
     margin-left: 18px;
     display: flex;
-    gap: 12px;
-
+    gap: 6px;
 }
 
 .icones a {

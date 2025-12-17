@@ -56,37 +56,38 @@
         <div class="caixote">
             <h1 class="titulo-contato"> Contate-nos! </h1>
 
-            <form id="form" action="#" method="post">
+            <form id="form-contato" novalidate>
 
-                <label for="nome" class="txtInputs"> Nome: </label>
-                <input id="nome" type="text" name="nome" placeholder="Anna Júlia" required>
+            <label for="nome" class="txtInputs">Nome:</label>
+            <input id="nome" type="text" placeholder="Anna Júlia">
 
-                <label for="email" class="txtInputs"> E-mail: </label>
-                <input id="email" type="email" name="email" placeholder="annajulia@gmail.com">
+            <label for="email" class="txtInputs">E-mail:</label>
+            <input id="email" type="email" placeholder="annajulia@gmail.com">
 
-                <h3 class="subtitulo-contato"> Assunto </h3>
-
-                <div class="checkboxes">
-                    <div>
-                        <input id="ajuda" type="checkbox" name="ajuda">
-                        <label for="ajuda"> Ajuda </label>
-                    </div>
-
-                    <div>
-                        <input id="sugestao" type="checkbox" name="sugestão">
-                        <label for="sugestão"> Sugestão </label>
-                    </div>
-
-                    <div>
-                        <input id="feedback" type="checkbox" name="feedback">
-                        <label for="feedback"> Feedback </label>
-                    </div>
+            <h3 class="subtitulo-contato">Assunto</h3>
+            <div class="checkboxes">
+                <div>
+                <input id="ajuda" type="checkbox">
+                <label for="ajuda">Ajuda</label>
                 </div>
+                <div>
+                <input id="sugestao" type="checkbox">
+                <label for="sugestao">Sugestão</label>
+                </div>
+                <div>
+                <input id="feedback" type="checkbox">
+                <label for="feedback">Feedback</label>
+                </div>
+            </div>
 
-                <h3 class="subtitulo-contato"> Mensagem </h3>
-                <textarea id="mensagem" name="mensagem" rows="5" placeholder="Digite a sua mensagem aqui..."></textarea>
+            <h3 class="subtitulo-contato">Mensagem</h3>
+            <textarea id="mensagem" rows="5" placeholder="Digite a sua mensagem aqui..."></textarea>
 
-                <button class="button-contato" type="submit"> Enviar </button>
+            <button class="button-contato" type="submit">Enviar</button>
+
+            <!-- FEEDBACK -->
+            <p id="erro-form" class="feedback-form"></p>
+
             </form>
         </div>
     </main>
@@ -98,8 +99,10 @@
             <!-- Informações -->
             <div class="coluna-blog">
                 <h3> Despejo de Poesias </h3>
-                <p> As poesias publicadas neste site são de domínio público ou possuem autorização expressa dos autores para exibição.
-                    Caso identifique algum conteúdo indevido, entre em contato conosco! </p>
+                <p> 
+                    As poesias publicadas neste site são de domínio público ou possuem autorização expressa dos autores para exibição.
+                    Caso identifique algum conteúdo indevido, entre em contato conosco!
+                </p>
             </div>
 
             <!-- Navegação inferior -->
@@ -108,7 +111,7 @@
                 <ul>
                     <li>
                         <i class="fa-regular fa-address-card"></i>
-                        <a href="#"> Sobre </a>
+                        <a href="/pages/blog/navigator/sobre.html"> Sobre </a>
                     </li>
                     <li>
                         <i class="fa-regular fa-address-book"></i>
@@ -116,7 +119,7 @@
                     </li>
                     <li>
                         <i class="fa-solid fa-code"></i>
-                        <a href="../login/login.html"> Admin </a>
+                        <a href="/pages/login/login.html"> Admin </a>
                     </li>
                 </ul>
             </div>
@@ -126,26 +129,28 @@
                 <h4> Legal </h4>
                 <ul>
                     <li>
-                        <a href="#"> Política de Privacidade </a>
+                        <a href="../../contract/politica-de-privacidade.html" target="_blank"> Política de privacidade </a>
                     </li>
                     <li>
-                        <a href="#"> Termos de Uso </a>
+                        <a href="../../contract/termos-de-uso.html" target="_blank"> Termos de uso </a>
                     </li>
                 </ul>
 
                 <div class="icones">
-                    
-                    <a href="https://github.com/mfrodr7gues/DespejoDePoesias">
+                    <a href="https://github.com/mfrodr7gues/DespejoDePoesias" target="_blank">
                         <i class="fa-brands fa-github"></i>
                     </a>
-                    
-                    <a href="https://www.linkedin.com/">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
 
-                    <a href="https://www.instagram.com/">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
+                    <a class="nosso-repositorio" href="https://github.com/mfrodr7gues/DespejoDePoesias" target="_blank"> Nosso repositório <3 </a>
+
+                    <!--
+                        <a href="https://www.linkedin.com/" target="_blank">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    -->
                 </div>
             </div>
         </div>
@@ -162,5 +167,6 @@
         </a>
     </footer>
 
+    <script type="module" src="/scripts/contato.js"></script>
 </body>
 </html>

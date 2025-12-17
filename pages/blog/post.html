@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Post</title>
+  <title> Post </title>
   <link rel="icon" type="image/png" href="/assets/blog-logo.png">
   <link rel="stylesheet" href="../../styles/imports.css">
 
@@ -21,33 +21,33 @@
   <header>
     <div class="logotitulo">
       <img class="logo" src="../../../assets/blog-logo.png" alt="Logo do Despejo de Poesias">
-      <h1 class="titulo">Despejo de Poesias</h1>
+      <h1 class="titulo"> Despejo de Poesias </h1>
     </div>
 
     <nav class="navigator">
       <ul>
         <li>
           <i class="fa-regular fa-address-card"></i>
-          <a href="/pages/blog/navigator/sobre.html">Sobre</a>
+          <a href="/pages/blog/navigator/sobre.html"> Sobre </a>
         </li>
         <li>
           <i class="fa-regular fa-address-book"></i>
-          <a href="/pages/blog/navigator/contato.html">Contato</a>
+          <a href="/pages/blog/navigator/contato.html"> Contato </a>
         </li>
         <li>
           <i class="fa-solid fa-code"></i>
-          <a href="/pages/login/login.html">Admin</a>
+          <a href="/pages/login/login.html"> Admin </a>
         </li>
       </ul>
     </nav>
   </header>
 
   <main class="post-main">
-    <section class="barra">
+    <section class="barra-post">
       <div class="barra-content">
         <a href="../blog/blog.html" class="button-voltar">
           <i class="fa-solid fa-arrow-right-from-bracket"></i>
-          Voltar para o Blog
+          Voltar para o blog
         </a>
       </div>
     </section>
@@ -111,26 +111,76 @@
     </div>
   </main>
 
-
   <!-- FOOTER DO BLOG -->
   <footer class="rodape">
-    <div class="conteudo-rodape">
-      <div class="coluna-blog">
-        <h3>Despejo de Poesias</h3>
-        <p>
-          As poesias publicadas neste site são de domínio público ou possuem autorização expressa 
-          dos autores para exibição.
-        </p>
+      <div class="conteudo-rodape">
+
+          <!-- Informações -->
+          <div class="coluna-blog">
+              <h3> Despejo de Poesias </h3>
+              <p> 
+                  As poesias publicadas neste site são de domínio público ou possuem autorização expressa dos autores para exibição.
+                  Caso identifique algum conteúdo indevido, entre em contato conosco!
+              </p>
+          </div>
+
+          <!-- Navegação inferior -->
+          <div class="coluna" id="coluna2">
+              <h4> Blog </h4>
+              <ul>
+                  <li>
+                      <i class="fa-regular fa-address-card"></i>
+                      <a href="/pages/blog/navigator/sobre.html"> Sobre </a>
+                  </li>
+                  <li>
+                      <i class="fa-regular fa-address-book"></i>
+                      <a href="/pages/blog/navigator/contato.html"> Contato </a>
+                  </li>
+                  <li>
+                      <i class="fa-solid fa-code"></i>
+                      <a href="/pages/login/login.html"> Admin </a>
+                  </li>
+              </ul>
+          </div>
+
+          <!-- Legalidade e ícones de redes sociais -->
+          <div class="coluna" id="coluna3">
+              <h4> Legal </h4>
+              <ul>
+                  <li>
+                      <a href="../contract/politica-de-privacidade.html" target="_blank"> Política de privacidade </a>
+                  </li>
+                  <li>
+                      <a href="../contract/termos-de-uso.html" target="_blank"> Termos de uso </a>
+                  </li>
+              </ul>
+
+              <div class="icones">
+                  <a href="https://github.com/mfrodr7gues/DespejoDePoesias" target="_blank">
+                      <i class="fa-brands fa-github"></i>
+                  </a>
+                  <a href="https://www.linkedin.com/" target="_blank">
+                      <i class="fa-brands fa-linkedin"></i>
+                  </a>
+                  <a href="https://www.instagram.com/" target="_blank">
+                      <i class="fa-brands fa-instagram"></i>
+                  </a>
+              </div>
+          </div>
       </div>
-    </div>
 
-    <hr>
+      <hr>
 
-    <div class="rodape-inferior">
-      <p>© 2025 Despejo de Poesias - Todos os direitos reservados.</p>
-    </div>
+      <!-- Copywhite -->
+      <div class="rodape-inferior">
+          <p> © 2025 Despejo de Poesias - Todos os direitos reservados. </p>
+      </div>
+
+      <a href="#" class="voltar-topo">
+        <i class="fa-regular fa-circle-up"></i>
+      </a>
   </footer>
 
-  <script src="../../scripts/post.js"></script>
+  <script type="module" src="../../scripts/post.js"></script>
 </body>
 </html>

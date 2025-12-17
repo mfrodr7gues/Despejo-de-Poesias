@@ -1,44 +1,87 @@
-const loginTry = document.getElementById("login");
-const email = document.getElementById("email");
-const senha = document.getElementById("senha");
+import { app } from "./firebase.js";
+
+import {
+  getAuth,
+  signInWithEmailAndPassword,
+  onAuthStateChanged
+} from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+
+const auth = getAuth(app);
+
+/* ==========================
+   ADMINS
+========================== */
+const ADMINS = [
+  "luiotv2302@gmail.com",
+  "n.nandcchi@gmail.com",
+  "alinexyz1811@gmail.com"
+];
+
+/* ==========================
+   ELEMENTOS DO SEU HTML
+========================== */
+const form = document.querySelector("form");
+const emailInput = document.getElementById("email");
+const senhaInput = document.getElementById("senha");
 const senhaLabel = document.getElementById("Slabel");
 
-const adms = [
-    {
-        "email": "luiotv2302@gmail.com",
-        "senha": "AllAdmin<3"
-    },
-    {
-        "email": "n.nandcchi@gmail.com",
-        "senha": "AllAdmin<3"
-    },
-    {
-        "email": "alinexyz1811@gmail.com",
-        "senha": "AllAdmin<3"
-    }
-]
+/* ==========================
+   MENSAGEM DE ERRO
+========================== */
+const erro = document.createElement("p");
+erro.style.color = "#ff6868ff";
+erro.style.marginTop = "10px";
+erro.style.fontSize = "14px";
+form.appendChild(erro);
 
-loginTry.addEventListener("click", e => {
-    e.preventDefault()
-    const senhaTry =  senha.value;
-    const emailTry =  email.value;
+/* ==========================
+   AUTO-REDIRECIONAMENTO
+========================== */
+onAuthStateChanged(auth, (user) => {
+  if (user && ADMINS.includes(user.email)) {
+    window.location.href = "/pages/admin/admin-vazio.html";
+  }
+});
 
-    for (let i = 0; i < adms.length; i++) {
-        if (emailTry === adms[i].email && senhaTry === adms[i].senha) {
-            location.href = "../admin/admin-vazio.html";
-            return;
-        }
-        else {
-            senha.style.borderBottom = "2px solid #ff6868ff";
-            senhaLabel.style.color = "#ff6868ff";
-        }
-    }
-})
+/* ==========================
+   LOGIN
+========================== */
+form.addEventListener("submit", async (e) => {
+  e.preventDefault();
+  erro.textContent = "";
+  senhaInput.style.borderBottom = "";
+  senhaLabel.style.color = "";
 
-function mostrarSenha() {
-    if (senha.type === "password") {
-        senha.type = "text";
-    } else {
-        senha.type = "password";
+  const email = emailInput.value.trim();
+  const senha = senhaInput.value;
+
+  if (!email || !senha) {
+    erro.textContent = "Preencha o e-mail e a senha.";
+    return;
+  }
+
+  try {
+    const cred = await signInWithEmailAndPassword(auth, email, senha);
+
+    if (!ADMINS.includes(cred.user.email)) {
+      erro.textContent = "Este usuário não é administrador.";
+      return;
     }
-}
+
+    window.location.href = "/pages/admin/admin-vazio.html";
+
+  } catch (err) {
+    erro.textContent = "E-mail ou senha inválidos.";
+    senhaInput.style.borderBottom = "2px solid #ff6868ff";
+    senhaLabel.style.color = "#ff6868ff";
+    console.error(err);
+  }
+});
+
+/* ==========================
+   MOSTRAR / ESCONDER SENHA
+========================== */
+window.mostrarSenha = function () {
+  senhaInput.type =
+    senhaInput.type === "password" ? "text" : "password";
+};

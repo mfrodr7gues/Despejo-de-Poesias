@@ -1,17 +1,37 @@
-PARTE DOS ADMIN´S:
+USAMOS A API PARA CONECTAR O SISTEMA COM UM "FALSO BANCO DE DADOS" DO TIPO JSON, QUE É O FORMATO RECEBIDO DE RESPOSTA DAS CHAMADAS HTTP
 
-- Tela de login (FEITO)
-- Tela de postagem (FEITO)
+---------------------------------------------------------------------------------------------------------------------------------------
 
-PARTE DOS USUÁRIOS:
+* Ajustes na estilização
 
-- Header (FEITO)
-- Em destaque (FEITO)
-- Mais populares (FEITO)
-- Poesias (FEITO)
-- Footer (FEITO)
+* Ajustar a escrita da poesia (Não salva, muito menos aparece)
 
-NAVEGADOR:
+* Ajustar o tamanho de cada imagem (para o blog, dentro do post e admin)
 
-- Sobre
+
+* Responsividade:
+- Blog
+- sobre
 - Contato
+- Login (FEITO)
+- Admin
+- Política de privacidade
+- Termos de uso
+
+* Hospedagem 
+
+! Engenharia reversa
+! Repositório do projeto
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+* O conteúdo das poesias não estão aparecendo
+* O JS entortou umas coisas
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+1. Projeto pronto
+2. Código no GitHub
+3. Banco de dados online (Firebase)
+4. Hospedagem do site (Netlify)
+5. Atualizações automáticas (deploy)
