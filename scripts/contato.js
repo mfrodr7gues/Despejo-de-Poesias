@@ -11,9 +11,6 @@ const nome = document.getElementById("nome");
 const email = document.getElementById("email");
 const mensagem = document.getElementById("mensagem");
 
-/* ==========================
-   FEEDBACK BONITO
-========================== */
 function mostrarMensagem(texto, tipo = "erro") {
   feedback.textContent = texto;
   feedback.className = `feedback-form show ${tipo}`;
@@ -21,13 +18,10 @@ function mostrarMensagem(texto, tipo = "erro") {
   if (tipo === "sucesso") {
     setTimeout(() => {
       feedback.classList.remove("show");
-    }, 10000); // 10 segundos visível
+    }, 10000); 
   }
 }
 
-/* ==========================
-   SUBMIT
-========================== */
 form.addEventListener("submit", async (event) => {
   event.preventDefault();
   feedback.className = "feedback-form";
@@ -72,9 +66,6 @@ form.addEventListener("submit", async (event) => {
   }
 });
 
-/* ==========================
-   LIMPA FEEDBACK AO DIGITAR
-========================== */
 form.addEventListener("input", () => {
   feedback.classList.remove("show");
 });

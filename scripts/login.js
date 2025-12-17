@@ -8,44 +8,31 @@ import {
 
 const auth = getAuth(app);
 
-/* ==========================
-   ADMINS
-========================== */
 const ADMINS = [
   "luiotv2302@gmail.com",
   "n.nandcchi@gmail.com",
   "alinexyz1811@gmail.com"
 ];
 
-/* ==========================
-   ELEMENTOS DO SEU HTML
-========================== */
+// Elementos
 const form = document.querySelector("form");
 const emailInput = document.getElementById("email");
 const senhaInput = document.getElementById("senha");
 const senhaLabel = document.getElementById("Slabel");
 
-/* ==========================
-   MENSAGEM DE ERRO
-========================== */
 const erro = document.createElement("p");
 erro.style.color = "#ff6868ff";
 erro.style.marginTop = "10px";
 erro.style.fontSize = "14px";
 form.appendChild(erro);
 
-/* ==========================
-   AUTO-REDIRECIONAMENTO
-========================== */
 onAuthStateChanged(auth, (user) => {
   if (user && ADMINS.includes(user.email)) {
     window.location.href = "/pages/admin/admin-vazio.html";
   }
 });
 
-/* ==========================
-   LOGIN
-========================== */
+// Login
 form.addEventListener("submit", async (e) => {
   e.preventDefault();
   erro.textContent = "";
@@ -78,9 +65,7 @@ form.addEventListener("submit", async (e) => {
   }
 });
 
-/* ==========================
-   MOSTRAR / ESCONDER SENHA
-========================== */
+// Mostrar e esconder senha
 window.mostrarSenha = function () {
   senhaInput.type =
     senhaInput.type === "password" ? "text" : "password";

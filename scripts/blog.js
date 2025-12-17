@@ -63,9 +63,7 @@ function pesquisarPoesias() {
   });
 }
 
-/* ==========================
-   DESTAQUE
-========================== */
+// Destaque 
 function preencherDestaque(post) {
   const card = document.querySelector(".destaque-card");
   const vazio = document.querySelector(".destaque-vazio");
@@ -79,8 +77,7 @@ function preencherDestaque(post) {
   }
 
   document.querySelector(".destaque-img").src = post.URL || "";
-  document.querySelector(".destaque-categoria").textContent =
-    (post.NomeAutor || "").toUpperCase();
+  document.querySelector(".destaque-categoria").textContent = (post.NomeAutor || "").toUpperCase();
   document.querySelector(".destaque-titulo").textContent = post.Title || "";
   document.querySelector(".destaque-data").textContent = post.Data || "";
 
@@ -92,9 +89,7 @@ function preencherDestaque(post) {
   card.style.display = "flex";
 }
 
-/* ==========================
-   POPULARES
-========================== */
+// Populares 
 function preencherPopulares(posts) {
   const container = document.querySelector(".miniArticles-super");
   const vazio = document.querySelector(".popular-vazio");
@@ -135,9 +130,7 @@ function preencherPopulares(posts) {
   });
 }
 
-/* ==========================
-   COMUNS
-========================== */
+// Comuns
 function preencherComuns(posts) {
   const container = document.querySelector(".poesias");
   const vazio = document.querySelector(".poesias-vazio");
@@ -180,9 +173,7 @@ function preencherComuns(posts) {
   });
 }
 
-/* ==========================
-   ESTADO VAZIO
-========================== */
+// Estado vazio
 function mostrarEstadoVazio() {
   document.querySelector(".destaque-card")?.style.setProperty("display", "none");
   document.querySelector(".destaque-vazio")?.style.setProperty("display", "flex");

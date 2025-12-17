@@ -6,9 +6,7 @@ import {
   getDocs
 } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
 
-/* ==========================
-   PEGAR ID DA URL
-========================== */
+// Pegar id da URL
 const params = new URLSearchParams(window.location.search);
 const id = params.get("id");
 
@@ -17,9 +15,7 @@ if (!id) {
   throw new Error("ID não encontrado na URL");
 }
 
-/* ==========================
-   CARREGAR POST
-========================== */
+// Carregar post
 async function carregarPost() {
   try {
     const ref = doc(db, "posts", id);
@@ -49,9 +45,7 @@ async function carregarPost() {
 
 carregarPost();
 
-/* ==========================
-   RECOMENDADOS
-========================== */
+// Posts recomendados
 async function carregarRecomendados(postAtual) {
   try {
     const querySnapshot = await getDocs(collection(db, "posts"));
