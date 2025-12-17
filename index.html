@@ -4,16 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Despejo de Poesias </title>
-    <link rel="icon" type="image/png" href="/assets/blog-logo.png"> 
+    <title>Despejo de Poesias</title>
+    <link rel="icon" type="image/png" href="assets/blog-logo.png"> 
     <link rel="stylesheet" href="styles/blog.css">
     
-    <!-- Links -->
+    <!-- Links externos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-
 </head>
 
 <body class="body-blogvazio">
@@ -21,8 +20,8 @@
     <!-- HEADER DO BLOG -->
     <header>
         <div class="logotitulo">
-            <img class="logo" src="../../../assets/blog-logo.png" alt="Logo do Despejo de Poesias">
-            <h1 class="titulo"> Despejo de Poesias </h1>
+            <img class="logo" src="assets/blog-logo.png" alt="Logo do Despejo de Poesias">
+            <h1 class="titulo">Despejo de Poesias</h1>
         </div>
 
         <!-- Navegação superior-->
@@ -30,15 +29,15 @@
             <ul>
                 <li>
                     <i class="fa-regular fa-address-card"></i>
-                    <a href="/pages/blog/navigator/sobre.html"> Sobre </a>
+                    <a href="navigator/sobre.html">Sobre</a>
                 </li>
                 <li>
                     <i class="fa-regular fa-address-book"></i>
-                    <a href="/pages/blog/navigator/contato.html"> Contato </a>
+                    <a href="navigator/contato.html">Contato</a>
                 </li>
                 <li>
                     <i class="fa-solid fa-code"></i>
-                    <a href="/pages/login/login.html"> Admin </a>
+                    <a href="../../login/login.html">Admin</a>
                 </li>
             </ul>
         </nav>
@@ -52,17 +51,17 @@
                     "Não lemos e escrevemos poesia porque é algo bonito. Lemos e escrevemos poesia porque pertencemos à raça humana;
                     e a raça humana está cheia de paixão... a poesia, a beleza, o romantismo, o amor são as coisas que nos mantêm vivos".
                 </p>
-                <p class="autoria"> – Sociedade dos Poetas Mortos </p>
+                <p class="autoria">– Sociedade dos Poetas Mortos</p>
             </div>
-            <h1> O blog para apaixonados por poesias. </h1>
+            <h1>O blog para apaixonados por poesias.</h1>
             <div class="p-contents">
-                <p> Aqui, despejamos poesias quando já não cabem mais no peito. </p>
-                <p class="aviso"> Sinta-se à vontade. </p>
+                <p>Aqui, despejamos poesias quando já não cabem mais no peito.</p>
+                <p class="aviso">Sinta-se à vontade.</p>
             </div>
 
             <div class="buttons-blog">
-                <button class="button-blog" onclick="window.location.href='../blog/navigator/sobre.html'"> Conhecer mais </button>
-                <button class="button-blog" onclick="window.location.href='#poesias-postadas'"> Ler poesias </button>   
+                <button class="button-blog" onclick="window.location.href='navigator/sobre.html'">Conhecer mais</button>
+                <button class="button-blog" onclick="window.location.href='#poesias-postadas'">Ler poesias</button>   
             </div>
         </div>
     </section>
@@ -72,7 +71,7 @@
             <div class="contents">
                 <!-- EM DESTAQUE -->
                 <section class="onHipe">
-                    <h2> Em destaque </h2>
+                    <h2>Em destaque</h2>
 
                     <div class="destaque-card" data-status="fill" style="display: none;">
                         <div class="destaque-img-wrapper">
@@ -98,22 +97,22 @@
                     <!-- ESTADO VAZIO -->
                     <div class="estado-vazio destaque-vazio" data-status="empty">
                         <i class="fas fa-star fa-lg"></i>
-                        <h3> Nenhum post em destaque </h3>
-                        <p> Aguardando postagem com rank mais alto. </p>
+                        <h3>Nenhum post em destaque</h3>
+                        <p>Aguardando postagem com rank mais alto.</p>
                     </div>
                 </section>
 
                 <!-- MAIS POPULARES -->
                 <section id="mostPopulars" class="mostPopulars">
-                    <h3> Mais populares </h3>
+                    <h3>Mais populares</h3>
 
                     <div class="miniArticles-super" style="display: none;"></div>
 
                     <!-- ESTADO VAZIO -->
                     <div class="estado-vazio popular-vazio">
                         <i class="fas fa-chart-line fa-lg"></i>
-                        <h3> Sem poesias populares </h3>
-                        <p> As poesias ainda não receberam engajamento suficiente. </p>
+                        <h3>Sem poesias populares</h3>
+                        <p>As poesias ainda não receberam engajamento suficiente.</p>
                     </div>
                 </section>
             </div>
@@ -122,7 +121,7 @@
         <!-- POESIAS POSTADAS -->
         <section class="articles" id="poesias-postadas">
             <div class="topLine">
-                <h2> Poesias postadas </h2>
+                <h2>Poesias postadas</h2>
                 <div class="searches">
                     <input type="text" class="search" id="pesquisa-poesia" placeholder="Pesquise por poesia ou escritor(a)">
                     <div class="searchIcon"><i class="fa-solid fa-magnifying-glass"></i></div>
@@ -134,9 +133,9 @@
             <!-- ESTADO VAZIO -->
             <div class="estado-vazio grande poesias-vazio">
                 <i class="fas fa-feather-alt"></i>
-                <h3 class="h3-ops"> Ops... Nenhuma publicação encontrada! </h3>
-                <p> Não há poesias postadas ainda. </p>
-                <button class="button-blog" onclick="window.location.href='../login/login.html'">
+                <h3 class="h3-ops">Ops... Nenhuma publicação encontrada!</h3>
+                <p>Não há poesias postadas ainda.</p>
+                <button class="button-blog" onclick="window.location.href='../../login/login.html'">
                     Sou admin &lt;3
                 </button>
             </div>
@@ -149,7 +148,7 @@
 
             <!-- Informações -->
             <div class="coluna-blog">
-                <h3> Despejo de Poesias </h3>
+                <h3>Despejo de Poesias</h3>
                 <p> 
                     As poesias publicadas neste site são de domínio público ou possuem autorização expressa dos autores para exibição.
                     Caso identifique algum conteúdo indevido, entre em contato conosco!
@@ -158,32 +157,32 @@
 
             <!-- Navegação inferior -->
             <div class="coluna" id="coluna2">
-                <h4> Blog </h4>
+                <h4>Blog</h4>
                 <ul>
                     <li>
                         <i class="fa-regular fa-address-card"></i>
-                        <a href="/pages/blog/navigator/sobre.html"> Sobre </a>
+                        <a href="navigator/sobre.html">Sobre</a>
                     </li>
                     <li>
                         <i class="fa-regular fa-address-book"></i>
-                        <a href="/pages/blog/navigator/contato.html"> Contato </a>
+                        <a href="navigator/contato.html">Contato</a>
                     </li>
                     <li>
                         <i class="fa-solid fa-code"></i>
-                        <a href="/pages/login/login.html"> Admin </a>
+                        <a href="../../login/login.html">Admin</a>
                     </li>
                 </ul>
             </div>
 
             <!-- Legalidade e ícones de redes sociais -->
             <div class="coluna" id="coluna3">
-                <h4> Legal </h4>
+                <h4>Legal</h4>
                 <ul>
                     <li>
-                        <a href="../contract/politica-de-privacidade.html" target="_blank"> Política de privacidade </a>
+                        <a href="../../contract/politica-de-privacidade.html" target="_blank">Política de privacidade</a>
                     </li>
                     <li>
-                        <a href="../contract/termos-de-uso.html" target="_blank"> Termos de uso </a>
+                        <a href="../../contract/termos-de-uso.html" target="_blank">Termos de uso</a>
                     </li>
                 </ul>
 
@@ -192,16 +191,7 @@
                         <i class="fa-brands fa-github"></i>
                     </a>
 
-                    <a class="nosso-repositorio" href="https://github.com/mfrodr7gues/DespejoDePoesias" target="_blank"> Nosso repositório <3 </a>
-
-                    <!--
-                        <a href="https://www.linkedin.com/" target="_blank">
-                            <i class="fa-brands fa-linkedin"></i>
-                        </a>
-                        <a href="https://www.instagram.com/" target="_blank">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-                    -->
+                    <a class="nosso-repositorio" href="https://github.com/mfrodr7gues/DespejoDePoesias" target="_blank">Nosso repositório &lt;3</a>
                 </div>
             </div>
         </div>
@@ -210,7 +200,7 @@
 
         <!-- Copywhite -->
         <div class="rodape-inferior">
-            <p> © 2025 Despejo de Poesias - Todos os direitos reservados. </p>
+            <p>© 2025 Despejo de Poesias - Todos os direitos reservados.</p>
         </div>
 
         <a href="#" class="voltar-topo">
