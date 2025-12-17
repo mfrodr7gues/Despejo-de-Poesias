@@ -76,9 +76,11 @@ async function carregarRecomendados(postAtual) {
         <article class="poesia-semelhante" onclick="location.href='post.html?id=${p.id}'">
           <div class="semelhante-categoria">${p.NomeAutor}</div>
           <h4 class="semelhante-title">${p.Title}</h4>
-          <div class="semelhante-meta" style="display: flex;">
-            <i class="fas fa-feather-alt"></i>
-            <span>${p.Admin}</span>
+          <div class="semelhante-meta">
+            <div class="semelhante-container" style="display: flex;">
+              <i class="fas fa-feather-alt"></i>
+              <span>${p.Admin}</span>
+            </div>
             <div class="details-meta">
               <p class="meta-date">
                 <i class="fa-regular fa-calendar fa-lg"></i> ${p.Data}
