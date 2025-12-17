@@ -27,3 +27,11 @@ USAMOS A API PARA CONECTAR O SISTEMA COM UM "FALSO BANCO DE DADOS" DO TIPO JSON,
 
 * O conteúdo das poesias não estão aparecendo
 * O JS entortou umas coisas
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+1. Projeto pronto
+2. Código no GitHub
+3. Banco de dados online (Firebase)
+4. Hospedagem do site (Netlify)
+5. Atualizações automáticas (deploy)
