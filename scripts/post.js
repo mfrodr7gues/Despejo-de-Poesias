@@ -77,7 +77,7 @@ async function carregarRecomendados(postAtual) {
           <div class="semelhante-categoria">${p.NomeAutor}</div>
           <h4 class="semelhante-title">${p.Title}</h4>
           <div class="semelhante-meta">
-            <div class="semelhante-container" style="display: flex;">
+            <div class="semelhante-container" style="display: flex;  align-itens: center;">
               <i class="fas fa-feather-alt"></i>
               <span>${p.Admin}</span>
             </div>
