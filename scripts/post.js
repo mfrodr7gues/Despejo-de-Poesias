@@ -77,7 +77,10 @@ async function carregarRecomendados(postAtual) {
           <div class="semelhante-categoria">${p.NomeAutor}</div>
           <h4 class="semelhante-title">${p.Title}</h4>
           <div class="semelhante-meta">
-            <span>${p.Admin}</span>
+            <div class="semelhante-container" style="display: flex;  align-items: center; gap: 5px;">
+              <i class="fas fa-feather-alt"></i>
+              <span>${p.Admin}</span>
+            </div>
             <div class="details-meta">
               <p class="meta-date">
                 <i class="fa-regular fa-calendar fa-lg"></i> ${p.Data}
