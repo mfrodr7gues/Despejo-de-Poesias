@@ -1,3 +1,7 @@
+/*
+Desktop:
+*/
+
 .main-sobre {
     max-width: 1150px;
     margin: 0 auto;
@@ -145,7 +149,7 @@ main section p {
 
 .contatar {
     text-align: center;
-    margin: 80px auto;
+    margin: 80px auto 30px;
 }
 
 .contatar h2 {
@@ -184,4 +188,105 @@ main section p {
     color: var(--background-color-vanillacream);
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/*
+Responsividade:
+*/
+
+@media (max-width: 768px) {
+
+    /* Tablet */
+
+    .main-sobre {
+        padding: 30px 80px;
+    }
+
+    .jornada-content {
+        margin: 30px auto 60px;
+    }
+
+    .profile .card {
+        width: 280px;
+    }
+
+    .profile .card:nth-child(3) {
+        grid-column: 1 / -1;
+        justify-self: center;
+    }
+}
+
+@media (max-width: 400px) {
+
+    /* Celular */
+    /* Layout geral */
+    .main-sobre {
+        padding: 20px 40px;
+    }
+
+    /* Cabeçalho */
+    .cabecalho h1 {
+        font-size: 28px;
+        line-height: 1.2;
+    }
+
+    .cabecalho p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    /* Títulos das seções */
+    main section h2 {
+        font-size: 20px;
+        line-height: 1.3;
+    }
+
+    main section h3 {
+        font-size: 18px;
+    }
+
+    /* Textos gerais */
+    main section p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    /* Jornada */
+    .jornada-content {
+        padding: 20px;
+        margin: 25px auto 50px;
+    }
+
+    /* Cards da equipe */
+    .profile {
+        grid-template-columns: 1fr;
+        max-width: 260px;
+        margin: 0 auto;
+        gap: 25px;
+        justify-items: center;
+    }
+
+    .profile .card {
+        width: 100%;
+        padding: 30px 18px;
+    }
+
+    .profile .card h2 {
+        font-size: 1.05rem;
+    }
+  
+    .contatar h2 {
+        font-size: 28px;
+        line-height: 1.3;
+    }
+
+    .contatar p {
+        font-size: 16px;
+    }
+
+    .contatar .botao-contato {
+        font-size: 0.95rem;
+        padding: 8px 20px;
+    }
+
 }

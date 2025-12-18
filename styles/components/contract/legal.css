@@ -1,7 +1,10 @@
+/*
+Desktop:
+*/
+
 .pagina-texto {
     background: var(--background-color-vanillacream);
     color: var(--primary-color-ebony);
-    font-family: 'Inter', sans-serif;
     line-height: 1.65;
     padding: 40px 20px;
 }
@@ -37,4 +40,37 @@ ul {
 
 li {
     margin-bottom: 8px;
+}
+
+/*
+Responsividade:
+*/
+
+@media (max-width: 768px) {
+
+    /* Tablet */
+
+    /* Tá pronta! */
+}
+
+@media (max-width: 400px) {
+
+    /* Celular */
+
+    .conteudo-pagina h1 {
+        font-size: 25px;
+        margin-bottom: 2px;
+    }
+
+    .conteudo-pagina h2 {
+        font-size: 20px;
+    }
+
+    .conteudo-pagina p {
+        font-size: 13px;
+    }
+
+    ul {
+        font-size: 13px;
+    }
 }

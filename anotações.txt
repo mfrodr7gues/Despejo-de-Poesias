@@ -2,31 +2,8 @@ USAMOS A API PARA CONECTAR O SISTEMA COM UM "FALSO BANCO DE DADOS" DO TIPO JSON,
 
 ---------------------------------------------------------------------------------------------------------------------------------------
 
-* Ajustes na estilização
-
-* Ajustar a escrita da poesia (Não salva, muito menos aparece)
-
-* Ajustar o tamanho de cada imagem (para o blog, dentro do post e admin)
-
-
-* Responsividade:
-- Blog
-- sobre
-- Contato
-- Login (FEITO)
-- Admin
-- Política de privacidade
-- Termos de uso
-
-* Hospedagem 
-
 ! Engenharia reversa
 ! Repositório do projeto
-
----------------------------------------------------------------------------------------------------------------------------------------
-
-* O conteúdo das poesias não estão aparecendo
-* O JS entortou umas coisas
 
 ---------------------------------------------------------------------------------------------------------------------------------------
 

@@ -16,3 +16,8 @@
 body {
     background-color: var(--background-color-vanillacream);
 }
+
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
