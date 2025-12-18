@@ -192,7 +192,7 @@ formUsuario?.addEventListener("submit", async (e) => {
     Assunto: assunto.innerHTML,
     Sobre: AboutPoesy.value.trim(),
     Rank: rank.value.trim(),
-    Data: new Date(),
+    Data: new Date().toLocaleDateString("pt-BR"),
     UltEdi: new Date()
   };
 
