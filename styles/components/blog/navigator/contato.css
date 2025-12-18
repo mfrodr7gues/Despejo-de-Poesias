@@ -1,3 +1,7 @@
+/*
+Desktop:
+*/
+
 .caixote {
     display: flex;
     flex-direction: column;
@@ -144,4 +148,89 @@ input[type="checkbox"]:checked::after {
   background: var(--background-color-vanillacream);
   color: var(--primary-color-ebony);
   border-left: 4px solid var(--primary-color-ebony);
+}
+
+/*
+Responsividade:
+*/
+
+@media (max-width: 728px) {
+
+    /* Tablet */
+
+    /* Tá feita! */
+}
+
+@media (max-width: 400px) {
+
+    .main-contato {
+        padding: 0 20px;
+    }
+
+    .caixote {
+        margin: 7vh auto;
+        padding: 18px;
+        max-width: 320px; 
+        border-radius: 16px;
+    }
+
+    .titulo-contato {
+        font-size: 22px;
+    }
+
+    .subtitulo-contato {
+        font-size: 16px;
+        margin-top: 12px;
+    }
+
+    .caixote input,
+    .caixote textarea {
+        font-size: 14px;
+        padding: 9px;
+    }
+
+    .checkboxes {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        gap: 0.5rem;
+    }
+
+    .checkboxes div {
+        width: auto;
+    }
+
+    .checkboxes div label {
+        font-size: 14px;
+    }
+
+    .button-contato {
+        width: 110px;
+        font-size: 13.5px;
+        padding: 9px;
+        margin-top: 16px;
+    }
+
+    .logout-contato i {
+        top: 90px;
+        right: 20px;
+        font-size: 24px;
+    }
+
+    .feedback-form {
+        font-size: 0.9rem;
+        padding: 10px 12px;
+    }
+
+        input[type="checkbox"] {
+        width: 18px;
+        height: 18px;
+    }
+
+    input[type="checkbox"]:checked::after {
+        left: 6px;
+        top: 2px;
+        width: 5px;
+        height: 10px;
+        border-width: 0 2px 2px 0;
+    }
 }

@@ -1,3 +1,7 @@
+/*
+Desktop:
+*/
+
 .login-page {
     background: var(--primary-color-ebony);
     display: flex;
@@ -110,7 +114,14 @@
     transition: 0.2s;
 }
 
+/*
+Responsividade:
+*/
+
 @media (max-width: 768px) {
+
+    /* Tablet */
+
     .login-conteiner {
         width: 80%;
         max-width: 320px;
@@ -133,6 +144,9 @@
 }
 
 @media (max-width: 400px) {
+
+    /* Celular */
+
     .login-conteiner {
         width: 80%;
         max-width: 260px;
