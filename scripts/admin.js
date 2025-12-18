@@ -184,6 +184,16 @@ async function listarPosts(filtro = "") {
 formUsuario?.addEventListener("submit", async (e) => {
   e.preventDefault();
 
+  const getTimeAgo = (date) => {
+    const now = new Date();
+    const diff = Math.floor((now - date) / 1000);
+    
+    if (diff < 60) return "agora";
+    if (diff < 3600) return `${Math.floor(diff / 60)}m atrás`;
+    if (diff < 86400) return `${Math.floor(diff / 3600)}h atrás`;
+    return `${Math.floor(diff / 86400)}d atrás`;
+  };
+
   const pub = {
     Admin: AdminName.value.trim(),
     Title: postTitle.value.trim(),
@@ -192,7 +202,8 @@ formUsuario?.addEventListener("submit", async (e) => {
     Assunto: assunto.innerHTML,
     Sobre: AboutPoesy.value.trim(),
     Rank: rank.value.trim(),
-    Data: new Date().toLocaleDateString("pt-BR")
+    Data: new Date().toLocaleDateString("pt-BR"),
+    UltEdi: getTimeAgo(pub.Data)
   };
 
   try {
