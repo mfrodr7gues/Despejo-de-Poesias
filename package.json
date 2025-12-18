@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "ckeditor4": "^4.25.1",
     "firebase": "^12.6.0",
     "json-server": "^1.0.0-beta.3"
   },
