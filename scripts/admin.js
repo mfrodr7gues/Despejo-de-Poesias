@@ -184,6 +184,18 @@ async function listarPosts(filtro = "") {
 formUsuario?.addEventListener("submit", async (e) => {
   e.preventDefault();
 
+  const pub = {
+    Admin: AdminName.value.trim(),
+    Title: postTitle.value.trim(),
+    NomeAutor: AutorName.value.trim(),
+    URL: URLimg.value.trim(),
+    Assunto: assunto.innerHTML,
+    Sobre: AboutPoesy.value.trim(),
+    Rank: rank.value.trim(),
+    Data: new Date(),
+    UltEdi: new Date()
+  };
+
   const getTimeAgo = (date) => {
     const now = new Date();
     const diff = Math.floor((now - date) / 1000);
@@ -194,17 +206,7 @@ formUsuario?.addEventListener("submit", async (e) => {
     return `${Math.floor(diff / 86400)}d atrás`;
   };
 
-  const pub = {
-    Admin: AdminName.value.trim(),
-    Title: postTitle.value.trim(),
-    NomeAutor: AutorName.value.trim(),
-    URL: URLimg.value.trim(),
-    Assunto: assunto.innerHTML,
-    Sobre: AboutPoesy.value.trim(),
-    Rank: rank.value.trim(),
-    Data: new Date().toLocaleDateString("pt-BR"),
-    UltEdi: getTimeAgo(pub.Data)
-  };
+  pub.UltEdi = getTimeAgo(pub.Data);
 
   try {
     if (editId) {
