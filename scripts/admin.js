@@ -1,4 +1,3 @@
-import { CKEDITOR } from "ckeditor4.js";
 import { app, db } from "./firebase.js";
 
 import {
